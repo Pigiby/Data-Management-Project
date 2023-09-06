@@ -1,0 +1,650 @@
+,IATACode,ICAOCode,Name,Countries
+0,2A,,Air Astra,['BD']
+1,2B,ARD,Albawings,"['AL', 'GB', 'IT']"
+2,2D,AOG,Eastern Airlines,"['DO', 'US']"
+3,2G,MRR,Angara Airlines,['RU']
+4,2I,,Star Peru,['PE']
+5,2J,VBW,Air Burkina,"['BF', 'BJ', 'CI', 'GH', 'ML', 'NE', 'SN', 'TG']"
+6,2L,OAW,Helvetic Airways,"['CH', 'CY', 'ES', 'FI', 'GR', 'MK', 'TR']"
+7,2M,MDV,Maya Island Air,['BZ']
+8,2O,RNE,Island Air Service,['US']
+9,2R,,Sunlight Express Airways,['PH']
+10,2W,WLC,W2FLY,"['CU', 'DO', 'ES', 'MX']"
+11,2Z,CGN,Passaredo,['BR']
+12,3B,CCG,Bestfly,['CV']
+13,3C,CEA,Air Chathams,"['NF', 'NZ']"
+14,3H,,Air Inuit,['CA']
+15,3K,JSA,Jetstar Asia,"['CN', 'ID', 'JP', 'KH', 'MY', 'PH', 'SG', 'TH']"
+16,3L,ISK,Air Arabia Abu Dhabi,"['AE', 'AZ', 'BD', 'BH', 'EG', 'GE', 'IN', 'IQ', 'IR', 'JO', 'KW', 'LB', 'NP', 'OM', 'PK', 'RU', 'TR', 'UZ']"
+17,3M,,Silver Airways,"['AI', 'BS', 'DM', 'DO', 'KN', 'PR', 'SX', 'US', 'VG', 'VI']"
+18,3O,MAC,Air Arabia Maroc,"['BE', 'CH', 'DE', 'ES', 'FR', 'GB', 'IT', 'MA', 'NL', 'TR']"
+19,3P,TNM,World 2 Fly Portugal S.A.,"['CU', 'DO', 'PT']"
+20,3R,GAI,Divi Divi Air,"['AW', 'BQ', 'CW']"
+21,3S,AEN,Air Antilles Express,"['BB', 'BL', 'DM', 'DO', 'GP', 'LC', 'MF', 'MQ', 'PR', 'SX']"
+22,3T,URN,Tarco Aviation,"['AE', 'QA', 'SA', 'SD']"
+23,3U,CSC,Sichuan Airlines,"['AE', 'AU', 'CA', 'CN', 'EG', 'HK', 'ID', 'IT', 'JP', 'KR', 'LA', 'MV', 'NP', 'RU', 'SG', 'TH', 'TR', 'TW', 'VN']"
+24,4A,AKL,ATSA Airlines,['PE']
+25,4B,,Boutique Air,['US']
+26,4G,GZP,Gazpromavia Aviation,['RU']
+27,4H,UBD,Hi Air,['KR']
+28,4J,,JetAir Caribbean,"['CO', 'CW', 'JM', 'SR', 'SX']"
+29,4N,ANT,Air North,['CA']
+30,4T,BHP,Rise Air,['CA']
+31,4W,,Warbelow's Air Ventures,['US']
+32,4Y,UYA,EW Discover GmbH,"['BG', 'CA', 'DE', 'DO', 'EG', 'ES', 'FR', 'GR', 'HR', 'IT', 'KE', 'MA', 'MU', 'MV', 'MX', 'NA', 'NO', 'PT', 'TN', 'TR', 'TZ', 'US', 'ZW']"
+33,4Z,,Airlink,"['AO', 'BW', 'CD', 'KE', 'LS', 'MG', 'MW', 'MZ', 'NA', 'SH', 'SZ', 'TZ', 'UG', 'ZA', 'ZM', 'ZW']"
+34,5F,CIR,Fly One,"['AE', 'BE', 'CY', 'DE', 'ES', 'FR', 'GB', 'GE', 'IE', 'IL', 'IT', 'MD', 'NL', 'PT', 'TR']"
+35,5J,CEB,Cebu Air,"['AE', 'AU', 'BN', 'CN', 'HK', 'ID', 'JP', 'KR', 'MO', 'MY', 'PH', 'SG', 'TH', 'TW', 'VN']"
+36,5M,SIB,Fly Montserrat,"['AG', 'MS']"
+37,5N,AUL,regional airlines,"['RU', 'UA']"
+38,5O,FPO,ASL Airlines,"['CH', 'DZ', 'FR']"
+39,5R,,RUTACA,"['DO', 'VE']"
+40,5T,MPE,Canadian North,['CA']
+41,5U,,TAG,"['BZ', 'GT', 'HN', 'MX', 'SV']"
+42,5W,AEU,Wizz Air Abu Dhabi,"['AE', 'AL', 'AM', 'AZ', 'BA', 'BH', 'CY', 'EG', 'GE', 'GR', 'IL', 'JO', 'KG', 'KW', 'KZ', 'MV', 'OM', 'RS', 'SA', 'TR', 'UZ']"
+43,5Z,VVC,CemAir Pty,"['BW', 'ZA', 'ZW']"
+44,6A,CHP,Armenia Airways,"['AM', 'IR', 'RU']"
+45,6E,IGO,IndiGo,"['AE', 'AZ', 'BD', 'BH', 'GE', 'ID', 'IN', 'KE', 'KW', 'LK', 'MV', 'MY', 'NP', 'OM', 'QA', 'SA', 'SG', 'TH', 'TR', 'VN']"
+46,6H,ISR,Israir Airlines,"['AE', 'IL', 'ME']"
+47,6I,IBZ,Air Alsie,['DK']
+48,6N,NRD,Niger Airlines,['NE']
+49,6O,,Orbest S.A.,"['CU', 'DO', 'MX', 'PT']"
+50,6R,DRU,Mirny Air Enterprise,['RU']
+51,7C,JJA,Jeju Air,"['CN', 'GU', 'HK', 'JP', 'KR', 'LA', 'MN', 'MO', 'MP', 'MY', 'PH', 'PW', 'SG', 'TH', 'TW', 'VN']"
+52,7G,SFJ,Star Flyer,"['JP', 'TW']"
+53,7H,,Ravn Alaska,['US']
+54,7P,,Air Panama,['PA']
+55,7R,BRB,RusLine,['RU']
+56,7Y,,Mann Yadanarpon Airlines,['MM']
+57,7Z,,EZ Air BV,"['AW', 'BQ', 'CO', 'CW']"
+58,8B,GFI,TransNusa,"['ID', 'MY']"
+59,8D,EXV,FitsAir,"['AE', 'IN', 'LK', 'MV', 'SA']"
+60,8E,BRG,Bering Air,['US']
+61,8F,FFR,STP Airways,"['PT', 'ST']"
+62,8J,KMV,Ecojet,['BO']
+63,8L,RHC,Lucky Air,"['CN', 'LA', 'TH']"
+64,8M,MMA,Myanmar Airways International,"['AE', 'CN', 'IN', 'KH', 'KR', 'MM', 'MY', 'RU', 'SG', 'TH', 'TW', 'VN']"
+65,8N,NKF,Regional Air Services,"['KE', 'TZ']"
+66,8P,PCO,Pacific Coastal Airlines,['CA']
+67,8R,,AMELIA,"['FR', 'NL']"
+68,8S,,Turbojet,"['HK', 'MO']"
+69,8T,TID,Air Tindi,['CA']
+70,8U,AAW,Afriqiyah Airways,"['EG', 'LY', 'TN', 'TR']"
+71,8V,WRF,Wright Air,['US']
+72,8Z,WVL,Congo Airways,['CD']
+73,9B,,AccesRail,"['AT', 'BE', 'CA', 'CH', 'CZ', 'DE', 'ES', 'FR', 'GB', 'HU', 'IT', 'JP', 'KR', 'NL', 'SE']"
+74,9C,CQH,Spring Airlines,"['CN', 'HK', 'JP', 'KH', 'KR', 'MO', 'SG', 'TH', 'TW']"
+75,9D,,Genghis Khan Airlines,['CN']
+76,9H,,Changan Airlines,['CN']
+77,9I,TKY,Alliance Air,"['IN', 'LK']"
+78,9J,,Dana Airlines,['NG']
+79,9K,KAP,Cape Air,"['KN', 'PR', 'US', 'VG', 'VI']"
+80,9M,,Central Mountain Air,['CA']
+81,9N,,Tropic Air,"['BZ', 'HN', 'MX', 'SV']"
+82,9P,,Fly Jinnah,['PK']
+83,9Q,PBA,Caicos Express Airways,"['DO', 'HT', 'JM', 'TC']"
+84,9R,VAP,SATENA,"['CO', 'VE']"
+85,9T,ABS,Thai Summer Airways,"['MO', 'TH', 'TW']"
+86,9V,VPA,Avior Airlines,"['DO', 'VE']"
+87,9X,,Southern Airways Express,"['MP', 'US']"
+88,A2,CIU,Anima Wings Aviation S.A.,"['GR', 'RO']"
+89,A3,AEE,Aegean Airlines,"['AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IE', 'IL', 'IT', 'JO', 'KW', 'LB', 'LU', 'LV', 'MA', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SA', 'SE', 'SI', 'SK', 'TN', 'TR']"
+90,A4,SWD,Azimuth Airlines,"['AE', 'AM', 'AZ', 'GE', 'IL', 'KZ', 'RU', 'TR', 'UZ']"
+91,A6,LPV,Air Travel,['CN']
+92,A8,BGL,Aerolink Uganda,['UG']
+93,A9,TGZ,Georgian Airways,"['AT', 'CY', 'DE', 'FR', 'GE', 'GR', 'IL', 'IT', 'LB', 'NL', 'RU']"
+94,AA,AAL,American Airlines,"['AG', 'AI', 'AR', 'AU', 'AW', 'BB', 'BM', 'BQ', 'BR', 'BS', 'BZ', 'CA', 'CH', 'CL', 'CN', 'CO', 'CR', 'CU', 'CW', 'DE', 'DM', 'DO', 'EC', 'ES', 'FR', 'GB', 'GD', 'GP', 'GR', 'GT', 'GY', 'HN', 'HT', 'IE', 'IL', 'IN', 'IT', 'JM', 'JP', 'KN', 'KR', 'KY', 'LC', 'MQ', 'MX', 'NI', 'NL', 'NZ', 'PA', 'PE', 'PR', 'PT', 'QA', 'SV', 'SX', 'TC', 'TT', 'US', 'UY', 'VC', 'VG', 'VI']"
+95,AAJ,,Alfa Airlines,"['SD', 'SS']"
+96,AAT,,Africa Airlines,['CG']
+97,AB,BER,Bonza Air,['AU']
+98,AC,ACA,Air Canada,"['AE', 'AG', 'AR', 'AT', 'AU', 'AW', 'BB', 'BE', 'BM', 'BR', 'BS', 'BZ', 'CA', 'CH', 'CL', 'CN', 'CO', 'CR', 'CU', 'CW', 'DE', 'DK', 'DO', 'DZ', 'EG', 'ES', 'FR', 'GB', 'GD', 'GP', 'GR', 'HK', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JP', 'KN', 'KR', 'KY', 'LC', 'MA', 'MQ', 'MX', 'NL', 'NZ', 'PA', 'PR', 'PT', 'SG', 'SX', 'TC', 'TH', 'TT', 'US', 'VC']"
+99,AD,AZU,Azul,"['BR', 'CW', 'FR', 'PT', 'US', 'UY']"
+100,AE,MDA,Mandarin Airlines,"['CN', 'HK', 'TW', 'VN']"
+101,AF,AFR,Air France,"['AE', 'AL', 'AM', 'AO', 'AR', 'AT', 'BE', 'BF', 'BJ', 'BR', 'CA', 'CD', 'CF', 'CG', 'CH', 'CI', 'CL', 'CM', 'CN', 'CO', 'CR', 'CU', 'CZ', 'DE', 'DJ', 'DK', 'DO', 'DZ', 'EG', 'ES', 'FI', 'FR', 'GA', 'GB', 'GE', 'GF', 'GH', 'GN', 'GP', 'GQ', 'GR', 'HK', 'HR', 'HU', 'IE', 'IL', 'IN', 'IT', 'JP', 'KE', 'KR', 'LB', 'MA', 'MG', 'ML', 'MQ', 'MR', 'MT', 'MU', 'MX', 'NE', 'NG', 'NL', 'NO', 'PA', 'PE', 'PF', 'PL', 'PT', 'RE', 'RO', 'RU', 'SE', 'SG', 'SI', 'SL', 'SN', 'SX', 'TD', 'TG', 'TH', 'TN', 'TR', 'TZ', 'US', 'VN', 'ZA']"
+102,AH,DAH,Air Algerie,"['AE', 'AT', 'BE', 'BF', 'CA', 'CH', 'CI', 'CN', 'DE', 'DZ', 'EG', 'ES', 'FR', 'GB', 'IT', 'JO', 'ML', 'MR', 'NE', 'PT', 'QA', 'RU', 'SA', 'SN', 'TN', 'TR', 'ZA']"
+103,AI,AIC,Air India,"['AE', 'AT', 'AU', 'BD', 'BH', 'CA', 'DE', 'DK', 'FR', 'GB', 'HK', 'IL', 'IN', 'IT', 'JP', 'KE', 'KR', 'KW', 'LK', 'MM', 'MV', 'NL', 'NP', 'OM', 'QA', 'SA', 'SG', 'TH', 'US']"
+104,AK,ABR,AirAsia,"['BD', 'BN', 'CN', 'HK', 'ID', 'IN', 'KH', 'LA', 'LK', 'MM', 'MO', 'MV', 'MY', 'PH', 'SG', 'TH', 'TW', 'VN']"
+105,AM,AMX,Aeromexico,"['AR', 'BR', 'CA', 'CL', 'CO', 'CR', 'CU', 'DO', 'EC', 'ES', 'FR', 'GB', 'GT', 'HN', 'IT', 'JP', 'KR', 'MX', 'NI', 'NL', 'PE', 'SV', 'US']"
+106,AN,AAA,Advanced Air,['US']
+107,AP,AIB,Alba Star,"['CV', 'EG', 'IT']"
+108,AQ,MPJ,9 Air,"['CN', 'HK']"
+109,AR,ARG,Aerolineas Argentinas,"['AR', 'BO', 'BR', 'CL', 'CO', 'CU', 'DO', 'ES', 'IT', 'MX', 'PE', 'PY', 'US', 'UY']"
+110,AS,ASA,Alaska Airlines,"['BS', 'BZ', 'CA', 'CR', 'GT', 'MX', 'US']"
+111,AT,RAM,Royal Air Maroc,"['AE', 'AO', 'BE', 'BF', 'BJ', 'CA', 'CD', 'CF', 'CG', 'CH', 'CI', 'CM', 'CV', 'DE', 'DZ', 'EG', 'ES', 'FR', 'GA', 'GB', 'GH', 'GM', 'GN', 'GQ', 'GW', 'IL', 'IT', 'LR', 'MA', 'ML', 'MR', 'NE', 'NG', 'NL', 'PT', 'QA', 'RU', 'SA', 'SL', 'SN', 'TG', 'TN', 'TR', 'US']"
+112,AU,AUT,Jetlines,"['CA', 'MX', 'US']"
+113,AV,AVA,SA AVIANCA,"['AR', 'AW', 'BO', 'BR', 'CA', 'CL', 'CO', 'CR', 'CW', 'DO', 'EC', 'ES', 'GB', 'GT', 'HN', 'MX', 'PA', 'PE', 'PR', 'PY', 'SV', 'US', 'UY']"
+114,AW,DIR,Africa World Airlines,"['GH', 'NG']"
+115,AY,FIN,Finnair,"['AE', 'AT', 'AX', 'BE', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HK', 'HR', 'HU', 'IE', 'IL', 'IN', 'IS', 'IT', 'JP', 'KR', 'LT', 'LV', 'NL', 'NO', 'PL', 'PT', 'QA', 'SE', 'SG', 'SI', 'TH', 'TR', 'US']"
+116,AZ,AZA,ITA Airways,"['AL', 'AR', 'BE', 'BG', 'BR', 'CH', 'DE', 'DZ', 'EG', 'ES', 'FR', 'GB', 'GR', 'HR', 'IL', 'IN', 'IT', 'JP', 'MT', 'MV', 'NL', 'TN', 'US']"
+117,B0,,La Compagnie,"['FR', 'IT', 'US']"
+118,B2,BRU,Belavia,"['AE', 'AM', 'AZ', 'BY', 'GE', 'IN', 'KZ', 'QA', 'RU', 'TM', 'TR', 'UZ']"
+119,B3,BLV,Tashi Air Pvt Ltd.,"['BT', 'IN', 'NP', 'TH']"
+120,B6,JBU,JetBlue Airways,"['AG', 'AW', 'BB', 'BM', 'BS', 'BZ', 'CA', 'CO', 'CR', 'CU', 'CW', 'DO', 'EC', 'FR', 'GB', 'GD', 'GP', 'GT', 'GY', 'HT', 'JM', 'KN', 'KY', 'LC', 'MX', 'NL', 'PE', 'PR', 'SX', 'TC', 'TT', 'US', 'VI']"
+121,B7,,Uni Airways,"['CN', 'TW']"
+122,B9,BGD,Iran Airtour,"['AE', 'AM', 'IQ', 'IR', 'TR']"
+123,BA,BAW,British Airways,"['AE', 'AG', 'AL', 'AR', 'AT', 'AU', 'AW', 'BB', 'BE', 'BG', 'BH', 'BM', 'BR', 'BS', 'CA', 'CH', 'CL', 'CN', 'CR', 'CY', 'CZ', 'DE', 'DK', 'DO', 'DZ', 'EG', 'ES', 'FR', 'GB', 'GD', 'GH', 'GI', 'GR', 'GY', 'HK', 'HR', 'HU', 'IE', 'IL', 'IN', 'IS', 'IT', 'JE', 'JM', 'JO', 'JP', 'KE', 'KN', 'KW', 'KY', 'LC', 'LU', 'MA', 'MT', 'MU', 'MV', 'MX', 'NG', 'NL', 'NO', 'PK', 'PL', 'PT', 'QA', 'RO', 'SA', 'SE', 'SG', 'SI', 'TC', 'TR', 'TT', 'US', 'ZA']"
+124,BB,SBS,Seaborne Airlines,['VI']
+125,BC,SKY,Skymark Airlines,['JP']
+126,BF,BBD,French bee,"['FR', 'PF', 'RE', 'US']"
+127,BG,BBC,Biman Bangladesh Airlines,"['AE', 'BD', 'CA', 'GB', 'IN', 'IT', 'JP', 'KW', 'MY', 'NP', 'OM', 'QA', 'SA', 'SG', 'TH', 'TR']"
+128,BI,RBA,Royal Brunei Airlines,"['AE', 'AU', 'BN', 'CN', 'GB', 'HK', 'ID', 'JP', 'KR', 'MY', 'PH', 'SA', 'SG', 'TH', 'TW', 'VN']"
+129,BJ,LBT,Nouvelair Tunisie,"['AM', 'AT', 'BA', 'BE', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'FR', 'GB', 'HR', 'HU', 'IT', 'MK', 'PL', 'PT', 'RS', 'RU', 'SE', 'SI', 'SK', 'TN', 'TR']"
+130,BK,PDC,Okay Airways,"['CN', 'PH', 'TH']"
+131,BMA,,Bermudair,"['BM', 'US']"
+132,BP,BOT,Air Botswana,"['BW', 'ZA', 'ZM', 'ZW']"
+133,BQ,ROM,SkyAlps SRL,"['AT', 'BE', 'CH', 'DE', 'DK', 'ES', 'HR', 'IT', 'SK']"
+134,BR,EVA,EVA Air,"['AT', 'AU', 'CA', 'CN', 'DE', 'FR', 'GB', 'HK', 'ID', 'IT', 'JP', 'KH', 'KR', 'MO', 'MY', 'NL', 'PH', 'SG', 'TH', 'TW', 'US', 'VN']"
+135,BS,BIH,US-Bangla Airlines,"['AE', 'BD', 'CN', 'IN', 'MV', 'MY', 'OM', 'QA', 'SG', 'TH']"
+136,BT,BTI,Air Baltic,"['AE', 'AM', 'AT', 'AZ', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IE', 'IL', 'IS', 'IT', 'LT', 'LV', 'MA', 'ME', 'MT', 'NL', 'NO', 'PT', 'RO', 'RS', 'SE', 'TR']"
+137,BU,,CAA,['CD']
+138,BV,BPA,"TOKI AIR Co., Ltd.",['JP']
+139,BW,BWA,Caribbean Airlines,"['AG', 'BB', 'BS', 'CA', 'CU', 'CW', 'DM', 'GD', 'GY', 'JM', 'KN', 'LC', 'SR', 'SX', 'TT', 'US', 'VC', 'VE']"
+140,BX,CST,Air Busan,"['CN', 'HK', 'JP', 'KH', 'KR', 'LA', 'MN', 'MO', 'MY', 'PH', 'RU', 'TH', 'TW', 'VN']"
+141,BZ,KEE,Blue Bird Airways,"['BG', 'CY', 'CZ', 'ES', 'GR', 'HU', 'IL', 'IT', 'RO']"
+142,C2,,CEIBA Intercontinental,"['BJ', 'GQ', 'TG']"
+143,C3,IPR,Trade Air Ltd.,['HR']
+144,C6,CJA,MY FREIGHTER,"['AE', 'RU', 'UZ']"
+145,C8,WDY,Cronos Airlines,"['CM', 'GQ', 'NG']"
+146,CA,CCA,Air China LTD,"['AE', 'AT', 'AU', 'BY', 'CA', 'CH', 'CN', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'HK', 'HU', 'ID', 'IT', 'JP', 'KH', 'KR', 'KZ', 'LK', 'MM', 'MN', 'MO', 'MY', 'NP', 'NZ', 'PH', 'PK', 'PL', 'RU', 'SE', 'SG', 'TH', 'TW', 'US', 'VN', 'ZA']"
+147,CC,MCK,CM Airlines,"['GT', 'HN']"
+148,CE,NTW,Route de Caen,"['FR', 'IE']"
+149,CFV,,Calafia Airlines,['MX']
+150,CG,TOK,PNG Air,['PG']
+151,CI,CAL,China Airlines,"['AT', 'AU', 'CA', 'CN', 'CZ', 'DE', 'GB', 'GU', 'HK', 'ID', 'IN', 'IT', 'JP', 'KH', 'KR', 'MM', 'MY', 'NL', 'NZ', 'PH', 'PW', 'SG', 'TH', 'TW', 'US', 'VN']"
+152,CM,CMP,COPA,"['AR', 'AW', 'BB', 'BO', 'BR', 'BS', 'BZ', 'CA', 'CL', 'CO', 'CR', 'CU', 'CW', 'DO', 'EC', 'GT', 'GY', 'HN', 'JM', 'MX', 'NI', 'PA', 'PE', 'PR', 'PY', 'SR', 'SV', 'SX', 'TT', 'US', 'UY', 'VE']"
+153,CN,WWD,Grand China Air,['CN']
+154,CQ,EXL,Coastal Aviation,['TZ']
+155,CU,CUB,Cubana de Aviacion,"['AR', 'CU', 'ES']"
+156,CX,CPA,Cathay Pacific Airways,"['AE', 'AU', 'BD', 'CA', 'CH', 'CN', 'DE', 'ES', 'FR', 'GB', 'HK', 'ID', 'IL', 'IN', 'IT', 'JP', 'KH', 'KR', 'LK', 'MY', 'NL', 'NP', 'NZ', 'PH', 'SG', 'TH', 'TW', 'US', 'VN', 'ZA']"
+157,CY,CYP,Cyprus Airways,"['AE', 'AM', 'CH', 'CY', 'CZ', 'EG', 'FR', 'GR', 'IL', 'IT', 'LB']"
+158,CZ,CSN,China Southern Airlines,"['AE', 'AU', 'AZ', 'BD', 'CA', 'CN', 'DE', 'FR', 'GB', 'GE', 'HK', 'ID', 'IR', 'IT', 'JP', 'KE', 'KG', 'KH', 'KR', 'KZ', 'LA', 'MM', 'MY', 'NL', 'NP', 'NZ', 'PH', 'PK', 'RU', 'SG', 'TH', 'TJ', 'TM', 'TR', 'TW', 'US', 'UZ', 'VN']"
+159,D2,SSF,Severstal Aircompany,"['BY', 'RU']"
+160,D3,DAO,Daallo Airlines,"['AE', 'SA', 'SO']"
+161,D7,XFA,AirAsia X,"['AU', 'CN', 'ID', 'IN', 'JP', 'KR', 'MY', 'NZ', 'SA', 'TH', 'TW']"
+162,D8,DJB,Norwegian Air International,"['AL', 'AT', 'BA', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IL', 'IT', 'LT', 'LV', 'MA', 'ME', 'MT', 'NL', 'NO', 'PL', 'PT', 'RS', 'SE', 'TR']"
+163,D9,DNV,Daallo Airlines (Somalia),"['KE', 'SO']"
+164,DCT,,Airtask Group,['GB']
+165,DD,NOK,Nok Air,"['CN', 'IN', 'TH']"
+166,DE,CFG,Condor Flugdienst,"['AE', 'AM', 'AT', 'BB', 'CA', 'CH', 'CU', 'CY', 'DE', 'DO', 'EG', 'ES', 'FR', 'GD', 'GE', 'GR', 'HR', 'IQ', 'IT', 'JM', 'KE', 'LB', 'MA', 'MQ', 'MT', 'MU', 'MV', 'MX', 'PT', 'RS', 'SC', 'TR', 'TT', 'TZ', 'US', 'ZA']"
+167,DG,SRQ,Cebgo,['PH']
+168,DJ,VBH,Air Djibouti SAS,"['DJ', 'ET', 'SO', 'YE']"
+169,DL,DAL,Delta Air Lines,"['AG', 'AR', 'AU', 'AW', 'BE', 'BM', 'BQ', 'BR', 'BS', 'BZ', 'CA', 'CH', 'CL', 'CN', 'CO', 'CR', 'CU', 'CW', 'CZ', 'DE', 'DK', 'DO', 'EC', 'ES', 'FR', 'GB', 'GH', 'GR', 'GT', 'HN', 'IE', 'IL', 'IS', 'IT', 'JM', 'JP', 'KN', 'KR', 'KY', 'LC', 'MX', 'NG', 'NL', 'NZ', 'PA', 'PE', 'PF', 'PR', 'PT', 'SE', 'SN', 'SV', 'SX', 'TC', 'US', 'VI', 'ZA']"
+170,DM,,Arajet,"['AW', 'BR', 'CA', 'CL', 'CO', 'CR', 'CW', 'DO', 'EC', 'GT', 'JM', 'MX', 'PE', 'SV', 'SX']"
+171,DMS,,Diamond Sky,['EE']
+172,DO,DOA,Sky High Aviation,"['AG', 'AI', 'AW', 'BQ', 'CU', 'CW', 'DO', 'GF', 'GP', 'KN', 'MQ', 'SX', 'US', 'VE', 'VI']"
+173,DP,FCA,Pobeda,"['BY', 'RU', 'UZ']"
+174,DQ,,Alexandria Airlines,"['EG', 'SA']"
+175,DR,,Ruili Airlines,"['CN', 'MM', 'TH']"
+176,DT,DTA,TAAG-Angola Airlines,"['AO', 'BR', 'CD', 'CG', 'CU', 'ES', 'GH', 'MZ', 'NA', 'NG', 'PT', 'ST', 'ZA']"
+177,DU,HMS,Air Liaison,['CA']
+178,DV,ACK,AirCompany SCAT,"['AM', 'GE', 'KZ', 'PK', 'RU', 'TR', 'UZ']"
+179,DX,DTR,Danish Air,"['DE', 'DK', 'NO']"
+180,DY,NAX,Norwegian Air Shuttle,"['AL', 'AT', 'BA', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LT', 'LV', 'MA', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SJ', 'TR']"
+181,DZ,,Donghai Airlines,['CN']
+182,E4,RSO,ATA - AEROTAXI ABAETE LTDA,['BR']
+183,E5,BRZ,Air Arabia Egypt,"['BH', 'EG', 'FR', 'IT', 'JO', 'OM', 'SA']"
+184,E9,CXS,Iberojet Airlines,"['CR', 'CU', 'DO', 'ES', 'HN', 'MU', 'MX']"
+185,EGU,,Eagle Air,['UG']
+186,EI,EIN,Aer Lingus,"['AE', 'AT', 'BB', 'BE', 'BG', 'CA', 'CH', 'CZ', 'DE', 'ES', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IM', 'IT', 'JE', 'NL', 'PL', 'PT', 'TR', 'US']"
+187,EK,UAE,Emirates,"['AE', 'AO', 'AR', 'AT', 'AU', 'BD', 'BE', 'BH', 'BR', 'CA', 'CH', 'CI', 'CN', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EG', 'ES', 'ET', 'FR', 'GB', 'GH', 'GN', 'GR', 'HK', 'HU', 'ID', 'IE', 'IL', 'IN', 'IQ', 'IR', 'IT', 'JO', 'JP', 'KE', 'KR', 'KW', 'LB', 'LK', 'MA', 'MT', 'MU', 'MV', 'MX', 'MY', 'NL', 'NO', 'NZ', 'OM', 'PH', 'PK', 'PL', 'PT', 'RU', 'SA', 'SC', 'SE', 'SG', 'SN', 'TH', 'TN', 'TR', 'TW', 'TZ', 'UG', 'US', 'VN', 'ZA', 'ZM', 'ZW']"
+188,EN,DLA,Air Dolomiti,"['AT', 'CH', 'DE', 'FR', 'IT', 'JE', 'LU', 'PL', 'RO', 'SE']"
+189,EO,ALX,Pegas Fly,"['BY', 'RU']"
+190,EP,IRC,Iran Aseman Airlines,"['GE', 'IQ', 'IR']"
+191,EQ,TAE,FLY ANGOLA,['AO']
+192,ER,DHL,Serene Air,"['AE', 'PK', 'SA']"
+193,ES,DHX,Estelar,"['CL', 'VE']"
+194,ET,ETH,Ethiopian Airlines,"['AE', 'AO', 'AR', 'AT', 'BE', 'BF', 'BH', 'BI', 'BJ', 'BR', 'BW', 'CA', 'CD', 'CG', 'CH', 'CI', 'CM', 'CN', 'DE', 'DJ', 'DK', 'EG', 'ER', 'ET', 'FR', 'GA', 'GB', 'GH', 'GN', 'GQ', 'GR', 'HK', 'ID', 'IE', 'IL', 'IN', 'IT', 'JO', 'JP', 'KE', 'KM', 'KR', 'KW', 'LB', 'MG', 'ML', 'MW', 'MY', 'MZ', 'NA', 'NE', 'NG', 'NO', 'OM', 'PH', 'PK', 'QA', 'RU', 'RW', 'SA', 'SC', 'SD', 'SE', 'SG', 'SN', 'SO', 'SS', 'TD', 'TG', 'TH', 'TR', 'TZ', 'UG', 'US', 'ZA', 'ZM', 'ZW']"
+195,EU,EEA,Chengdu Airlines,"['CN', 'RU', 'TH']"
+196,EW,EWG,Eurowings,"['AE', 'AL', 'AM', 'AT', 'BA', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IE', 'IL', 'IQ', 'IS', 'IT', 'JE', 'LB', 'MA', 'ME', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'TN', 'TR']"
+197,EY,ETD,Etihad Airways,"['AE', 'AT', 'AU', 'BD', 'BE', 'BH', 'CA', 'CH', 'CN', 'DE', 'DK', 'EG', 'ES', 'FR', 'GB', 'GR', 'ID', 'IE', 'IL', 'IN', 'IT', 'JO', 'JP', 'KR', 'KW', 'LB', 'LK', 'MA', 'MV', 'MY', 'NL', 'OM', 'PH', 'PK', 'PT', 'QA', 'RU', 'SA', 'SC', 'SG', 'TH', 'TR', 'US', 'ZA']"
+198,F2,FLM,Safarilink,"['KE', 'TZ']"
+199,F3,FSW,flyadeal,"['AE', 'AZ', 'BA', 'CY', 'EG', 'GE', 'JO', 'KW', 'SA', 'SD', 'TR']"
+200,F4,NBK,Air Flamenco,['PR']
+201,F8,,Flair Airlines,"['CA', 'DO', 'MX', 'US']"
+202,F9,FFT,Frontier Airlines,"['BS', 'CR', 'DO', 'GT', 'JM', 'MX', 'PR', 'SV', 'SX', 'US', 'VI']"
+203,FA,SFR,Safair,"['MU', 'TZ', 'ZA']"
+204,FB,LZB,Bulgaria Air,"['BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'ES', 'FR', 'GB', 'GR', 'IL', 'IT', 'KW', 'NL']"
+205,FC,WBA,Link Airways,['AU']
+206,FD,AIQ,Thai AirAsia,"['BD', 'CN', 'HK', 'ID', 'IN', 'JP', 'KH', 'LA', 'LK', 'MM', 'MO', 'MV', 'MY', 'SG', 'TH', 'TW', 'VN']"
+207,FFV,,Fly540,"['KE', 'TZ']"
+208,FG,AFG,Ariana Afghan Airlines,"['AE', 'AF', 'IR', 'PK', 'RU', 'SA', 'TR']"
+209,FH,FUA,Freebird Airlines,"['DE', 'GB', 'TR']"
+210,FI,ICE,Icelandair,"['AT', 'BE', 'CA', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FO', 'FR', 'GB', 'GL', 'GR', 'IE', 'IL', 'IS', 'IT', 'NL', 'NO', 'SE', 'US']"
+211,FJ,FJI,Fiji Airways,"['AU', 'CA', 'FJ', 'FR', 'HK', 'JP', 'KI', 'NZ', 'SB', 'SG', 'TO', 'TV', 'US', 'VU', 'WS']"
+212,FLG,,Fly Big,['IN']
+213,FM,CSH,Shanghai Airlines,"['CN', 'HK', 'HU', 'JP', 'KR', 'MO', 'MY', 'TH', 'TW']"
+214,FN,RGL,Fastjet Zimbabwe,"['BW', 'ZA', 'ZW']"
+215,FNA,,Norlandair,['IS']
+216,FP,FRE,FlyPelican,['AU']
+217,FQ,,Crown Airlines,"['LY', 'TR']"
+218,FR,RYR,Ryanair,"['AL', 'AT', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IL', 'IT', 'JO', 'LT', 'LU', 'LV', 'MA', 'ME', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SK', 'TR']"
+219,FT,SRH,FlyEgypt,"['AE', 'AM', 'EG', 'SA', 'UZ']"
+220,FU,,Fuzhou Airlines,['CN']
+221,FY,NWR,Firefly,"['ID', 'MY', 'SG', 'TH']"
+222,FZ,FDB,flydubai,"['AE', 'AL', 'AM', 'AT', 'AZ', 'BA', 'BD', 'BG', 'BH', 'BY', 'CZ', 'DJ', 'EG', 'ER', 'ET', 'GE', 'GR', 'HR', 'HU', 'IL', 'IN', 'IQ', 'IR', 'IT', 'JO', 'KG', 'KW', 'KZ', 'LB', 'LK', 'ME', 'MV', 'NP', 'OM', 'PK', 'PL', 'QA', 'RO', 'RS', 'RU', 'SA', 'SD', 'SI', 'SO', 'SS', 'TH', 'TJ', 'TM', 'TR', 'TZ', 'UG', 'UZ']"
+223,G3,GLO,Gol,"['AR', 'BO', 'BR', 'DO', 'PY', 'SR', 'US', 'UY']"
+224,G4,AAY,Allegiant Air,['US']
+225,G5,HXA,China Express Airlines,"['CN', 'LA', 'TH']"
+226,G6,WLG,FLY ARNA,"['AM', 'GE', 'IQ', 'IR', 'KW', 'RU']"
+227,G9,ABY,Air Arabia PJSC,"['AE', 'AM', 'AZ', 'BD', 'BH', 'EG', 'GE', 'IN', 'IQ', 'IR', 'IT', 'JO', 'KE', 'KG', 'KW', 'KZ', 'LB', 'LK', 'MY', 'NP', 'OM', 'PK', 'QA', 'RU', 'SA', 'SO', 'TH', 'TR', 'UG', 'UZ']"
+228,GA,GIA,Garuda Indonesia,"['AU', 'CN', 'HK', 'ID', 'JP', 'KR', 'MY', 'NL', 'SA', 'SG', 'TH']"
+229,GD,AHA,Aviair PTY LTD,['AU']
+230,GE,TNA,LIFT,['ZA']
+231,GF,GBA,Gulf Air,"['AE', 'AZ', 'BD', 'BH', 'CY', 'DE', 'EG', 'ES', 'FR', 'GB', 'GE', 'GR', 'IL', 'IN', 'IT', 'JO', 'KW', 'LK', 'MA', 'MV', 'OM', 'PH', 'PK', 'QA', 'RU', 'SA', 'SG', 'TH', 'TR']"
+232,GJ,EEZ,Loong Air,"['CN', 'HK', 'JP', 'KG', 'KR', 'MY', 'PH', 'TH', 'UZ']"
+233,GK,,Jetstar Japan,"['JP', 'PH', 'TW']"
+234,GL,BSK,Air Greenland,"['DK', 'GL', 'IS', 'NO']"
+235,GM,SVK,Chair Airlines,"['CH', 'CY', 'DE', 'EG', 'ES', 'GR', 'MK', 'RS']"
+236,GP,PTP,APG Airlines,['FR']
+237,GQ,BSY,Sky Express,"['BE', 'BG', 'CY', 'DE', 'FR', 'GB', 'GR', 'IT']"
+238,GR,GCO,Aurigny Air Services,"['GB', 'GG', 'IE']"
+239,GS,GUN,TianJin Airlines,"['AU', 'CN', 'GB', 'HK', 'JP', 'KR', 'RU']"
+240,GT,GBL,Air Guilin,['CN']
+241,GV,ARF,Grant Aviation,['US']
+242,GW,KIL,Costa Rica Green Airways SRL,['CR']
+243,GX,JXX,Guangxi Beibu Gulf Airlines,"['CN', 'TH']"
+244,GY,TMG,Colorful GuiZhou Airlines,['CN']
+245,GZ,RAR,Air Rarotonga,['CK']
+246,H2,SKU,Sky Airline,"['AR', 'BR', 'CL', 'CO', 'DO', 'MX', 'PE']"
+247,H8,KHB,Sky Airlines Peru,"['PE', 'US']"
+248,H9,IZM,Himalaya Airlines,"['AE', 'BD', 'CN', 'KW', 'MY', 'NP', 'QA', 'SA']"
+249,HA,HAL,Hawaiian Airlines,"['AS', 'AU', 'CK', 'JP', 'KR', 'NZ', 'PF', 'US']"
+250,HB,HAR,Greater Bay Airlines Company Limite,"['HK', 'JP', 'KR', 'TH', 'TW', 'VN']"
+251,HBR,,Hebridean Air Services,['GB']
+252,HC,HCC,Air Senegal,"['BJ', 'CI', 'CM', 'CV', 'ES', 'FR', 'GA', 'GM', 'GN', 'GW', 'IT', 'MA', 'ML', 'MR', 'SL', 'SN', 'US']"
+253,HE,LGW,BAR AVIATION LIMITED,['UG']
+254,HF,HLF,Air Cote D'Ivoire,"['BF', 'BJ', 'CD', 'CG', 'CI', 'CM', 'GA', 'GH', 'GN', 'GW', 'LR', 'MA', 'ML', 'NE', 'NG', 'SN', 'TG', 'ZA']"
+255,HH,,Qanot Sharq,"['CY', 'HU', 'IL', 'RU', 'SA', 'TH', 'TR', 'UZ', 'VN']"
+256,HI,,Papillon Airways,['US']
+257,HK,FSC,Skippers Aviation,['AU']
+258,HM,SEY,Air Seychelles,"['IL', 'IN', 'LK', 'MU', 'MV', 'SC', 'ZA']"
+259,HN,HVY,Equair,['EC']
+260,HO,DJA,Juneyao Airlines,"['CN', 'FI', 'HK', 'IT', 'JP', 'KR', 'MO', 'SG', 'TH', 'TW']"
+261,HP,HPA,Amapola,"['AX', 'FI', 'SE']"
+262,HU,CHH,Hainan Airlines,"['AU', 'BE', 'CA', 'CN', 'DE', 'ES', 'FR', 'GB', 'HK', 'IE', 'IL', 'IT', 'JP', 'KH', 'MO', 'NZ', 'RS', 'RU', 'SE', 'SG', 'TH', 'TW']"
+263,HV,TRA,Transavia,"['AE', 'AT', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DK', 'EG', 'ES', 'FR', 'GB', 'GR', 'HR', 'IL', 'IS', 'IT', 'JO', 'LB', 'LV', 'MA', 'NL', 'NO', 'PT', 'SI']"
+264,HW,NWL,North-Wright Airways,['CA']
+265,HX,CRK,Hong Kong Airlines,"['CN', 'HK', 'ID', 'JP', 'KR', 'TH', 'TW']"
+266,HY,UZB,Uzbekistan Airways,"['AE', 'AZ', 'BY', 'CN', 'DE', 'EG', 'FR', 'GB', 'GE', 'ID', 'IL', 'IN', 'IT', 'JP', 'KG', 'KR', 'KZ', 'LV', 'MY', 'RU', 'SA', 'TH', 'TJ', 'TR', 'US', 'UZ']"
+267,HZ,SOZ,Aurora Airlines,"['CN', 'RU']"
+268,I2,IBS,Iberia Express,"['DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'IE', 'IL', 'IS', 'IT', 'NL']"
+269,I4,FWA,Island Air Express,['US']
+270,I5,,AirAsia (India),['IN']
+271,I6,SEQ,IRYO,['ES']
+272,I7,PMW,IndiaOne Air,['IN']
+273,I8,,Izhavia,['RU']
+274,IA,IAW,I A W,"['AE', 'AZ', 'EG', 'GE', 'IN', 'IQ', 'IR', 'JO', 'KW', 'LB', 'OM', 'PK', 'QA', 'RU', 'SA', 'TR']"
+275,IB,IBE,Iberia,"['AR', 'AT', 'BE', 'BR', 'CH', 'CL', 'CO', 'CR', 'CU', 'CZ', 'DE', 'DO', 'DZ', 'EC', 'ES', 'FI', 'FR', 'GB', 'GR', 'GT', 'HR', 'HU', 'IT', 'MA', 'MX', 'NO', 'PA', 'PE', 'PR', 'PT', 'QA', 'SE', 'SN', 'SV', 'US', 'UY', 'VE']"
+276,ID,ITK,Batik Air,"['AU', 'ID', 'IN', 'MY', 'SG', 'TH']"
+277,IE,SOL,Solomon Airlines,"['AU', 'FJ', 'SB', 'VU']"
+278,IF,ISW,FBA,"['AE', 'EG', 'IN', 'IQ', 'IR', 'LB', 'PK', 'RU', 'SA', 'SY', 'TN', 'TR']"
+279,IJ,GWL,Spring Airlines Japan,"['CN', 'JP']"
+280,IK,LKN,Air Kiribati,['KI']
+281,IL,,Trigana Air,['ID']
+282,IN,MAK,Nam Air,['ID']
+283,IO,IAA,IrAero,"['AZ', 'CN', 'MN', 'RU', 'VN']"
+284,IOS,,Isles Of Scilly Skybus,['GB']
+285,IP,JOL,PT Pelita Air Service,['ID']
+286,IQ,AUB,Qazaq Air,"['AZ', 'KZ', 'RU']"
+287,IR,IRA,Iran Air,"['AE', 'AT', 'AZ', 'DE', 'FR', 'GB', 'IN', 'IQ', 'IR', 'IT', 'KW', 'LB', 'PK', 'QA', 'TR']"
+288,IS,,Sepehran Airlines,"['IQ', 'IR', 'KW']"
+289,IT,KFR,Tigerair Taiwan,"['JP', 'KR', 'MO', 'PH', 'TH', 'TW', 'VN']"
+290,ITI,,iNTAIRLINE,['FR']
+291,IU,,PT. Super Air Jet,['ID']
+292,IW,AOM,Wings Air,"['ID', 'MY']"
+293,IX,AXB,AIR INDIA EXPRESS,"['AE', 'BH', 'IN', 'KW', 'OM', 'QA', 'SA', 'SG']"
+294,IY,IYE,Yemen Airways,"['DJ', 'EG', 'ET', 'IN', 'JO', 'SA', 'SD', 'YE']"
+295,IZ,AIZ,Arkia - Israeli Airlines,"['AE', 'CY', 'DE', 'ES', 'FR', 'GE', 'GR', 'IL', 'MA', 'NL', 'RO', 'RS', 'SK']"
+296,J2,AHY,Azerbaijan Hava Yollary,"['AE', 'AT', 'AZ', 'CD', 'CZ', 'DE', 'EG', 'ES', 'FR', 'GB', 'GE', 'IL', 'IR', 'IT', 'KZ', 'RU', 'SA', 'TJ', 'TR']"
+297,J3,PLR,Northwestern Air,['CA']
+298,J4,BFL,Badr Airlines,"['EG', 'SA', 'SD', 'SS']"
+299,J5,,Alaska Seaplane,['US']
+300,J7,VJA,Afrijet,"['BJ', 'CG', 'CM', 'GA', 'GQ', 'ST']"
+301,J9,JZR,Jazeera Airways,"['AE', 'AL', 'AZ', 'BA', 'BD', 'BH', 'CY', 'CZ', 'EG', 'GE', 'IN', 'IQ', 'IR', 'JO', 'KG', 'KW', 'KZ', 'LB', 'LK', 'ME', 'NP', 'OM', 'PK', 'QA', 'RS', 'RU', 'SA', 'TJ', 'TR', 'UZ']"
+302,JA,BON,JetSMART,"['AR', 'BR', 'CL', 'CO', 'PE', 'UY']"
+303,JBA,,Helijet International,['CA']
+304,JD,,Beijing Capital Airlines,"['AU', 'CN', 'ES', 'GB', 'JP', 'MV', 'PT', 'RU', 'TH']"
+305,JH,NES,Fuji Dream Airlines,['JP']
+306,JL,JAL,JAL,"['AU', 'CA', 'CN', 'DE', 'FI', 'FR', 'GB', 'GU', 'HK', 'ID', 'IN', 'JP', 'KR', 'MY', 'PH', 'RU', 'SG', 'TH', 'TW', 'US', 'VN']"
+307,JM,AJM,Jambojet Limited,"['CD', 'KE']"
+308,JQ,JST,Jetstar Airways,"['AU', 'CK', 'FJ', 'ID', 'JP', 'KR', 'NZ', 'SG', 'TH', 'US', 'VN']"
+309,JR,SER,Joy Air,['CN']
+310,JT,LNI,Lion Airlines,"['ID', 'MY']"
+311,JU,JAT,Air Serbia,"['AL', 'AT', 'BA', 'BE', 'BG', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FR', 'GB', 'GR', 'HR', 'HU', 'IL', 'IT', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'RU', 'SE', 'SI', 'TR', 'US']"
+312,JV,BLS,Bearskin Airlines,['CA']
+313,JX,JEC,Starlux Airlines,"['JP', 'MO', 'MY', 'PH', 'SG', 'TH', 'TW', 'US', 'VN']"
+314,JY,TCI,InterCaribbean Airways,"['AG', 'BB', 'BS', 'CU', 'DM', 'DO', 'GD', 'GY', 'HT', 'JM', 'KN', 'LC', 'PR', 'TC', 'VC', 'VG']"
+315,K3,,Taquan Air,['US']
+316,K6,KHV,Cambodia Angkor Air,"['CN', 'IN', 'KH', 'LA', 'MO', 'SG', 'VN']"
+317,K7,,Air KBZ Company Limited,['MM']
+318,KA,HDA,Aero Nomad Airlines LLC,"['IN', 'KG', 'PK', 'RU']"
+319,KB,DRK,(Royal Bhutan Airlines),"['BD', 'BT', 'IN', 'NP', 'SG', 'TH', 'TL']"
+320,KC,KZR,Air Astana,"['AE', 'AZ', 'CN', 'DE', 'EG', 'GB', 'GE', 'GR', 'IL', 'IN', 'KG', 'KR', 'KZ', 'ME', 'MV', 'NL', 'SA', 'TH', 'TJ', 'TR', 'UZ']"
+321,KE,KAL,Korean Air Lines,"['AE', 'AT', 'AU', 'CA', 'CH', 'CN', 'CZ', 'DE', 'ES', 'FR', 'GB', 'GU', 'HK', 'HU', 'ID', 'IL', 'IN', 'IT', 'JP', 'KH', 'KR', 'MM', 'MN', 'MY', 'NL', 'NP', 'NZ', 'PH', 'RU', 'SG', 'TH', 'TR', 'TW', 'US', 'UZ', 'VN']"
+322,KF,BLF,Air Belgium,"['BE', 'MU', 'ZA']"
+323,KG,BNX,Denver Air Connection,['US']
+324,KI,DHI,SKS Airways Sdn Bhd,['MY']
+325,KK,KKK,LEAV Aviation GmbH,"['DE', 'ES', 'GR']"
+326,KL,KLM,KLM,"['AE', 'AR', 'AT', 'AW', 'BE', 'BH', 'BQ', 'BR', 'CA', 'CH', 'CL', 'CN', 'CO', 'CR', 'CW', 'CZ', 'DE', 'DK', 'EC', 'ES', 'FI', 'FR', 'GB', 'GH', 'GR', 'HK', 'HR', 'HU', 'ID', 'IE', 'IL', 'IN', 'IT', 'JP', 'KE', 'KR', 'KW', 'LU', 'MX', 'MY', 'NG', 'NL', 'NO', 'OM', 'PA', 'PE', 'PH', 'PL', 'PT', 'RO', 'RS', 'RU', 'RW', 'SA', 'SE', 'SG', 'SR', 'SX', 'TH', 'TR', 'TT', 'TW', 'TZ', 'UG', 'US', 'ZA']"
+327,KM,AMC,Air Malta,"['AT', 'BE', 'CH', 'CZ', 'DE', 'ES', 'FR', 'GB', 'IL', 'IT', 'MT', 'NL', 'PT']"
+328,KMA,,Komiaviatrans,['RU']
+329,KN,CUA,China United Airlines,"['CN', 'JP']"
+330,KP,KIA,ASKY,"['AO', 'BF', 'BJ', 'CD', 'CF', 'CG', 'CI', 'CM', 'CV', 'GA', 'GH', 'GM', 'GN', 'GQ', 'GW', 'KE', 'LR', 'ML', 'NE', 'NG', 'SL', 'SN', 'ST', 'TD', 'TG', 'ZA']"
+331,KQ,KQA,Kenya Airways,"['AE', 'BI', 'CD', 'CF', 'CI', 'CM', 'CN', 'ET', 'FR', 'GB', 'GH', 'IN', 'KE', 'KM', 'LR', 'MG', 'MU', 'MW', 'MZ', 'NG', 'NL', 'RW', 'SC', 'SD', 'SL', 'SN', 'SS', 'TZ', 'UG', 'US', 'YT', 'ZA', 'ZM', 'ZW']"
+332,KR,CWK,Cambodia Airways,"['CN', 'KH', 'SG', 'TH']"
+333,KS,PEN,AIR CONNECT AVIATION GROUP S.A.,"['HU', 'IT', 'RO']"
+334,KU,KAC,Kuwait Airways,"['AE', 'AT', 'AZ', 'BA', 'BD', 'BH', 'CH', 'CN', 'DE', 'EG', 'ES', 'FR', 'GB', 'GE', 'GR', 'IN', 'IQ', 'IR', 'IT', 'JO', 'KW', 'LB', 'MA', 'MY', 'NL', 'NP', 'OM', 'PH', 'PK', 'QA', 'SA', 'TH', 'TR', 'US']"
+335,KV,MVD,KrasAvia,"['MN', 'RU']"
+336,KW,WAN,Kenai Aviation,['US']
+337,KX,CAY,Cayman Airways,"['CU', 'HN', 'JM', 'KY', 'PA', 'US']"
+338,KY,EQL,Kunming Airlines,"['CN', 'TH']"
+339,L5,LTR,RED AIR SRL,"['DO', 'US']"
+340,L6,VNZ,Mauritania Airlines,"['BJ', 'CG', 'CI', 'ES', 'GA', 'GN', 'MA', 'ML', 'MR', 'SN', 'TN']"
+341,L9,TLW,Lumiwings,"['BA', 'IT']"
+342,LA,LAN,LATAM Airlines Group,"['AR', 'AU', 'AW', 'BO', 'BR', 'CL', 'CO', 'CR', 'CU', 'DE', 'DO', 'EC', 'ES', 'FK', 'FR', 'GB', 'IT', 'MX', 'NZ', 'PE', 'PT', 'PY', 'US', 'UY', 'VE', 'ZA']"
+343,LC,VLO,La Costena,['NI']
+344,LF,NDC,Contour Aviation,['US']
+345,LG,LGL,Luxair,"['AE', 'AT', 'BE', 'BG', 'CH', 'CV', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IT', 'LU', 'MA', 'ME', 'MT', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SI', 'SN', 'TN', 'TR']"
+346,LH,GEC,Lufthansa,"['AE', 'AL', 'AM', 'AO', 'AR', 'AT', 'AZ', 'BA', 'BE', 'BG', 'BH', 'BR', 'CA', 'CH', 'CN', 'CO', 'CR', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GQ', 'GR', 'HK', 'HR', 'HU', 'IE', 'IL', 'IN', 'IQ', 'IR', 'IS', 'IT', 'JE', 'JO', 'JP', 'KE', 'KR', 'KW', 'KZ', 'LB', 'LT', 'LU', 'LV', 'MA', 'ME', 'MK', 'MT', 'MX', 'NG', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SA', 'SE', 'SG', 'SI', 'TH', 'TN', 'TR', 'US', 'ZA']"
+347,LI,LIA,LIAT,"['AG', 'BB', 'DM', 'GD', 'KN', 'LC', 'SX', 'VC', 'VG', 'VI']"
+348,LID,,Alidaunia,['IT']
+349,LJ,SLA,Jin Air,"['CN', 'GU', 'JP', 'KR', 'LA', 'MO', 'MY', 'PH', 'TH', 'TW', 'VN']"
+350,LK,LXR,Lao Skyway,['LA']
+351,LM,LVG,Loganair,"['DK', 'GB', 'IE', 'IM', 'NO']"
+352,LN,LAA,Libyan Airlines,"['EG', 'JO', 'LY', 'NE', 'SA', 'TN', 'TR']"
+353,LO,LOT,LOT Polish Airlines,"['AE', 'AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'CA', 'CH', 'CN', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IL', 'IN', 'IT', 'JP', 'KR', 'KZ', 'LB', 'LT', 'LU', 'LV', 'MD', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'RO', 'RS', 'SE', 'SI', 'SK', 'TR', 'US', 'UZ']"
+354,LQ,LAQ,Lanmei Airlines,"['CN', 'KH', 'MY', 'TH']"
+355,LS,EXS,Jet2,"['AT', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'HR', 'HU', 'IS', 'IT', 'JE', 'ME', 'MT', 'NO', 'PL', 'PT', 'TR']"
+356,LT,LTU,LongJiang Airlines,['CN']
+357,LTR,,Lufttransport,['NO']
+358,LX,SWU,SWISS,"['AE', 'AL', 'AR', 'AT', 'BA', 'BE', 'BG', 'BR', 'CA', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GR', 'HK', 'HU', 'IE', 'IL', 'IN', 'IT', 'JP', 'LB', 'LT', 'LU', 'MA', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SG', 'SI', 'TH', 'TN', 'TR', 'US', 'ZA']"
+359,LY,ELY,EL AL,"['AE', 'AT', 'BG', 'CH', 'CY', 'CZ', 'DE', 'EG', 'ES', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IE', 'IL', 'IN', 'IT', 'JP', 'MA', 'ME', 'NL', 'PT', 'RO', 'RU', 'SI', 'TH', 'TR', 'US', 'ZA']"
+360,LZ,,Air Link,['AU']
+361,M0,,Aero Mongolia,"['CN', 'JP', 'KR', 'MN', 'RU', 'VN']"
+362,M5,KEN,Kenmore Air,['US']
+363,MD,MDG,Air Madagascar,"['FR', 'KM', 'MG', 'MU', 'RE', 'YT']"
+364,ME,MEA,Middle East Airlines,"['AE', 'AM', 'BE', 'CH', 'CI', 'CY', 'DE', 'DK', 'EG', 'ES', 'FR', 'GB', 'GH', 'GR', 'IQ', 'IT', 'JO', 'KW', 'LB', 'NG', 'QA', 'SA', 'TR']"
+365,MF,CXA,Xiamen Airlines,"['AU', 'CA', 'CD', 'CN', 'FR', 'HK', 'ID', 'JP', 'KE', 'KH', 'KR', 'MM', 'MO', 'MY', 'NL', 'PH', 'QA', 'SG', 'TH', 'TW', 'US', 'VN']"
+366,MGH,,Mavi Gok Havacilik AS,"['KZ', 'TR']"
+367,MH,MAS,Malaysia Airlines,"['AU', 'BD', 'CN', 'GB', 'HK', 'ID', 'IN', 'JP', 'KH', 'KR', 'LK', 'MM', 'MY', 'NP', 'NZ', 'PH', 'QA', 'SA', 'SG', 'TH', 'TW', 'VN']"
+368,MJ,MLR,Myway Airlines,"['CN', 'GE', 'IL']"
+369,MK,MAU,Air Mauritius,"['AU', 'CH', 'FR', 'GB', 'IN', 'MG', 'MU', 'MY', 'RE', 'ZA']"
+370,MM,SAM,Peach Aviation,"['CN', 'HK', 'JP', 'KR', 'TH', 'TW']"
+371,MNE,,Air Montenegro,"['CH', 'ME', 'RS', 'SI', 'TR']"
+372,MO,CAV,Calm Air International,['CA']
+373,MR,MRT,Hunnu Air,"['CN', 'KZ', 'MN', 'RU']"
+374,MRJ,,Meraj Air,"['IQ', 'IR', 'RU', 'SY', 'TR']"
+375,MS,MSR,EgyptAir,"['AE', 'AT', 'BD', 'BE', 'BH', 'CA', 'CD', 'CH', 'CM', 'CN', 'CY', 'DE', 'DK', 'DZ', 'EG', 'ER', 'ES', 'ET', 'FR', 'GB', 'GH', 'GR', 'HU', 'IE', 'IL', 'IN', 'IQ', 'IT', 'JO', 'JP', 'KE', 'KM', 'KW', 'LB', 'LY', 'MA', 'NG', 'NL', 'OM', 'QA', 'RU', 'RW', 'SA', 'SD', 'SS', 'TD', 'TN', 'TR', 'TZ', 'UG', 'US', 'ZA']"
+376,MU,CES,China Eastern Airlines,"['AE', 'AU', 'BD', 'CA', 'CN', 'DE', 'ES', 'FR', 'GB', 'HK', 'ID', 'IT', 'JP', 'KH', 'KR', 'LA', 'LK', 'MM', 'MO', 'MV', 'MY', 'NL', 'NP', 'NZ', 'PH', 'RU', 'SG', 'TH', 'TW', 'US', 'VN']"
+377,MX,MXA,Breeze Airways,['US']
+378,MZ,MNA,Amakusa,['JP']
+379,N0,,Norse Atlantic Airways,"['DE', 'FR', 'IT', 'NO', 'TH', 'US']"
+380,N3,OMS,Vuela El Salvador S.A. de C.V.,"['GT', 'HN', 'MX', 'SV', 'US']"
+381,N4,NWS,Nord Wind,"['CU', 'IR', 'KG', 'RU', 'TJ']"
+382,N9,,Shree Airlines,['NP']
+383,NB,SNB,Berniq Airways,"['AE', 'EG', 'LY', 'TN', 'TR']"
+384,ND,,Nordica,['SE']
+385,NE,ESK,Nesma Airlines,"['EG', 'SA']"
+386,NF,AVN,Air Vanuatu,"['AU', 'FJ', 'NC', 'NZ', 'VU']"
+387,NH,ANA,ANA,"['AT', 'AU', 'BE', 'CA', 'CN', 'DE', 'FR', 'GB', 'HK', 'ID', 'IN', 'JP', 'KR', 'MX', 'MY', 'PH', 'RU', 'SG', 'TH', 'TW', 'US', 'VN']"
+388,NJ,,Ghadames Air Transport,"['LY', 'TN', 'TR']"
+389,NK,NKS,Spirit Airlines,"['AW', 'CO', 'CR', 'DO', 'EC', 'GT', 'HN', 'HT', 'JM', 'MX', 'NI', 'PE', 'PR', 'SV', 'SX', 'US', 'VI']"
+390,NM,NZM,Air Moana,['PF']
+391,NO,NOS,Neos,"['AE', 'BG', 'BS', 'CA', 'CH', 'CN', 'CU', 'CV', 'CY', 'CZ', 'DE', 'DO', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GP', 'GR', 'HR', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'KE', 'KZ', 'LK', 'MA', 'MG', 'MU', 'MV', 'MX', 'OM', 'PT', 'SN', 'TH', 'TN', 'TZ', 'US']"
+392,NP,,Nile Air,"['AE', 'EG', 'IQ', 'KW', 'SA', 'SE', 'TR', 'UZ']"
+393,NR,PIR,Manta Air,['MV']
+394,NS,,Hebei Airlines,"['CN', 'SG']"
+395,NT,IBB,Binter Canarias,"['CV', 'ES', 'FR', 'IT', 'MA', 'MR', 'PT', 'SN']"
+396,NU,JTA,Japan Transocean Air,['JP']
+397,NX,AMU,Air Macau,"['CN', 'JP', 'KR', 'MO', 'SG', 'TH', 'TW', 'VN']"
+398,NZ,EAG,Air New Zealand,"['AU', 'CA', 'CK', 'CN', 'FJ', 'HK', 'ID', 'JP', 'KR', 'NC', 'NU', 'NZ', 'PF', 'SG', 'TO', 'TW', 'US', 'WS']"
+399,O4,ABV,Andes Lineas Aereas,['AR']
+400,OA,OAL,Olympic Air,['GR']
+401,OB,AAN,BoA,"['AR', 'BO', 'BR', 'ES', 'PE', 'US']"
+402,OD,MXD,Batik Air Malaysia,"['AE', 'AU', 'BD', 'CN', 'HK', 'ID', 'IN', 'JP', 'KR', 'LK', 'MV', 'MY', 'NP', 'NZ', 'PK', 'SA', 'SG', 'TH', 'TW', 'VN']"
+403,OE,AOT,FLYONE AIRLINES,"['FR', 'MD']"
+404,OF,TML,Overland Airways,['NG']
+405,OG,,Fly Play hf.,"['AT', 'BE', 'CA', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'IE', 'IS', 'IT', 'NL', 'PL', 'PT', 'SE', 'US']"
+406,OI,,Hinterland Aviation,['AU']
+407,OJ,OLA,NyxAir OU,['EE']
+408,OK,CSA,CSA,"['CZ', 'ES', 'FR']"
+409,OM,MGL,Miat Mongolian Airlines,"['CN', 'DE', 'HK', 'JP', 'KG', 'KR', 'MN', 'TR']"
+410,ON,RON,Nauru Airlines,"['AU', 'FJ', 'FM', 'KI', 'MH', 'NR']"
+411,OP,CHK,Passion Air,['GH']
+412,OQ,,Chongqing Airlines,"['CN', 'SG', 'TH']"
+413,OR,TFL,TUIfly Netherlands,"['AW', 'BG', 'BQ', 'CU', 'CV', 'CW', 'CY', 'DO', 'EG', 'ES', 'FI', 'GM', 'GR', 'JM', 'MK', 'MX', 'NL', 'PT', 'SE', 'SN', 'TR']"
+414,OS,AUA,Austrian,"['AL', 'AM', 'AT', 'BA', 'BE', 'BG', 'CA', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IL', 'IQ', 'IR', 'IS', 'IT', 'JO', 'JP', 'LT', 'MA', 'MD', 'ME', 'MK', 'MU', 'MV', 'MX', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE', 'SK', 'TH', 'TR', 'US']"
+415,OU,CTN,Croatia Airlines,"['AT', 'BA', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'HR', 'IE', 'IT', 'MK', 'NL', 'NO', 'RO', 'SE']"
+416,OV,ELL,SalamAir,"['AE', 'AZ', 'BA', 'BD', 'BH', 'CZ', 'EG', 'IN', 'IQ', 'IR', 'KW', 'KZ', 'LB', 'LK', 'MY', 'NP', 'OM', 'PK', 'QA', 'SA', 'SD', 'TH', 'TR']"
+417,OW,EXK,Skyward Express,['KE']
+418,OZ,OZR,Asiana Airlines,"['AU', 'CN', 'DE', 'ES', 'FR', 'GB', 'HK', 'ID', 'IN', 'IT', 'JP', 'KH', 'KR', 'KZ', 'MN', 'MP', 'PH', 'SG', 'TH', 'TR', 'TW', 'US', 'UZ', 'VN']"
+419,P0,PFZ,Proflight Zambia,"['MW', 'ZA', 'ZM']"
+420,P2,,AirKenya Express Limited,"['KE', 'TZ', 'UG', 'YE']"
+421,P4,,Air Peace,"['CM', 'GH', 'GM', 'IN', 'NG', 'SL', 'SN', 'TG', 'ZA']"
+422,P5,RPB,Copa Airlines Colombia,"['AW', 'CO', 'CR', 'CU', 'CW', 'DO', 'EC', 'MX', 'PA', 'PE', 'VE']"
+423,P6,,Pascan,['CA']
+424,PA,PAA,Airblue,"['AE', 'PK', 'SA']"
+425,PB,,PAL Airlines,['CA']
+426,PC,PGT,Pegasus,"['AE', 'AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'BH', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HU', 'IL', 'IQ', 'IR', 'IT', 'JO', 'KG', 'KW', 'KZ', 'LB', 'MA', 'MD', 'ME', 'MK', 'NL', 'NO', 'OM', 'PK', 'PL', 'QA', 'RO', 'RS', 'RU', 'SA', 'SE', 'TR']"
+427,PD,POE,Porter Airlines,"['CA', 'US']"
+428,PE,PEV,Peoples,"['AT', 'CH']"
+429,PF,PNW,Air Sial Limited,"['OM', 'PK', 'SA']"
+430,PG,BKP,Bangkok Airways,"['CN', 'HK', 'KH', 'LA', 'MM', 'MV', 'SG', 'TH']"
+431,PI,SUF,Polar Airlines,['RU']
+432,PJ,SPM,Air Saint Pierre,"['CA', 'PM']"
+433,PK,PIA,Pakistan International Airlines,"['AE', 'AZ', 'BH', 'CA', 'CF', 'CM', 'CN', 'IQ', 'KW', 'MY', 'OM', 'PK', 'QA', 'SA', 'SY', 'TR']"
+434,PL,ASE,Southern Air,['BS']
+435,PM,TOS,Canary Fly,['ES']
+436,PN,,West Air,['CN']
+437,PNX,,AIS Airlines,['DE']
+438,PR,PAL,Philippine Airlines,"['AE', 'AU', 'CA', 'CN', 'GU', 'HK', 'ID', 'JP', 'KH', 'KR', 'MO', 'MY', 'PG', 'PH', 'QA', 'SA', 'SG', 'TH', 'TW', 'US', 'VN']"
+439,PU,PUA,Plus Ultra,"['CO', 'ES', 'GQ', 'PE', 'VE']"
+440,PV,SBU,Saint Barth Commuter,"['BL', 'GP', 'MF', 'SX']"
+441,PW,PRF,Precision Air Services,"['KE', 'KM', 'TZ']"
+442,PX,ANG,Air Niugini,"['AU', 'FJ', 'HK', 'PG', 'PH', 'PW', 'SB', 'SG']"
+443,PY,SLM,Surinam Airways,"['AW', 'CW', 'GY', 'NL', 'SR', 'US']"
+444,Q2,,Maldivian,"['BD', 'IN', 'MV']"
+445,Q3,MBN,Anguilla Air Services,"['AI', 'BL', 'SX', 'VI']"
+446,Q5,MLA,40-Mile Air,['US']
+447,Q6,CDP,Volaris Costa Rica,"['CO', 'CR', 'GT', 'MX', 'PE', 'SV', 'US']"
+448,Q8,PEC,Trans Air Congo,['CG']
+449,Q9,AFU,Green Africa Airways Limited,['NG']
+450,QB,GFG,Qeshm Air,"['AE', 'DE', 'GE', 'IQ', 'IR', 'TR']"
+451,QC,CRD,Camair-Co,"['CF', 'CM', 'GA', 'TD']"
+452,QF,SSQ,Qantas,"['AU', 'CA', 'CL', 'CN', 'FJ', 'GB', 'HK', 'ID', 'IN', 'IT', 'JP', 'KR', 'NC', 'NF', 'NZ', 'PG', 'PH', 'SB', 'SG', 'TH', 'TL', 'TO', 'US', 'WS', 'ZA']"
+453,QG,,Citilink,"['ID', 'MY', 'SG']"
+454,QH,LYN,Bamboo Airways,"['AU', 'DE', 'GB', 'JP', 'KR', 'SG', 'TH', 'TW', 'VN']"
+455,QI,CIM,Ibom Air,['NG']
+456,QL,LER,LASER,"['CO', 'CW', 'DO', 'PA', 'VE']"
+457,QN,ARR,Skytrans,['AU']
+458,QP,,Akasa Air,['IN']
+459,QQ,ROA,Alliance Airlines,"['AU', 'PG']"
+460,QR,QTR,Qatar Airways,"['AE', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BD', 'BE', 'BG', 'BH', 'BR', 'CA', 'CH', 'CI', 'CN', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DZ', 'EG', 'ES', 'ET', 'FR', 'GB', 'GE', 'GH', 'GR', 'HK', 'HR', 'HU', 'ID', 'IE', 'IN', 'IQ', 'IR', 'IT', 'JO', 'JP', 'KE', 'KR', 'KW', 'KZ', 'LB', 'LK', 'MA', 'MV', 'MY', 'MZ', 'NA', 'NG', 'NL', 'NO', 'NP', 'NZ', 'OM', 'PH', 'PK', 'PL', 'QA', 'RO', 'RS', 'RU', 'SA', 'SC', 'SD', 'SE', 'SG', 'SO', 'TH', 'TN', 'TR', 'TZ', 'UG', 'US', 'VN', 'ZA', 'ZM', 'ZW']"
+461,QS,TVS,Smart Wings,"['AE', 'AL', 'BG', 'CY', 'CZ', 'EG', 'ES', 'FR', 'GR', 'HR', 'HU', 'IL', 'IT', 'PT', 'SK', 'TR']"
+462,QV,LAO,Lao Airlines,"['CN', 'KH', 'KR', 'LA', 'TH', 'VN']"
+463,QW,BWG,Qingdao Airlines,"['CN', 'KR', 'TH']"
+464,QZ,AWQ,Indonesia AirAsia,"['AU', 'ID', 'KH', 'MY', 'SG', 'TH']"
+465,R2,ORB,Groupe Transair,"['CG', 'CI', 'CV', 'GA', 'GN', 'ML', 'SN']"
+466,R3,SYL,Yakutia,"['CN', 'RU']"
+467,R5,MAC,Jordan Aviation Airlines,"['AE', 'EG', 'JO']"
+468,RA,RNA,Nepal Airlines,"['AE', 'HK', 'IN', 'JP', 'MY', 'NP', 'QA', 'SA', 'TH']"
+469,RC,FLI,Atlantic Airways Faroe Islands,"['DE', 'DK', 'ES', 'FO', 'FR', 'GB', 'IS', 'NO', 'US']"
+470,RER,,Aeroregional,"['EC', 'PA']"
+471,RF,FWL,Aero K Airlines,"['JP', 'KR']"
+472,RFR,,Royal Air Force,"['CV', 'FK', 'GB']"
+473,RJ,RJA,Royal Jordanian,"['AE', 'BE', 'BH', 'CA', 'CH', 'CY', 'DE', 'DK', 'DZ', 'EG', 'ES', 'FR', 'GB', 'GR', 'IL', 'IQ', 'IT', 'JO', 'KW', 'LB', 'NL', 'QA', 'SA', 'SE', 'TH', 'TN', 'TR', 'US']"
+474,RK,RKH,Ryanair UK,"['AL', 'BE', 'BG', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IT', 'LU', 'LV', 'MA', 'ME', 'MT', 'NO', 'PL', 'PT', 'RO', 'SE', 'SK']"
+475,RLY,,Air Loyaute,['NC']
+476,RM,,Armenia,"['AM', 'GE', 'RU']"
+477,RO,ROT,TAROM,"['BE', 'BG', 'CZ', 'DE', 'EG', 'ES', 'FR', 'GB', 'GR', 'HU', 'IL', 'IT', 'JO', 'LB', 'MD', 'NL', 'RO', 'RS', 'TR']"
+478,RQ,KMF,Kam Air,"['AE', 'AF', 'IN', 'KW', 'PK', 'SA', 'TR', 'UZ']"
+479,RRV,,Mombasa Air Safari,['KE']
+480,RS,SKV,Air Seoul,"['CN', 'JP', 'KR', 'PH', 'VN']"
+481,RT,,UVT Aero,['RU']
+482,RVP,,Sevenair,['PT']
+483,RW,RPA,Royal Air,['PH']
+484,RY,,Jiangxi Air,"['CN', 'HK']"
+485,RZ,,SANSA,"['CR', 'NI', 'PA']"
+486,S0,OKS,Aerolineas Sosa,['HN']
+487,S4,RZO,Azores Airlines,"['BM', 'CA', 'CV', 'DE', 'ES', 'FR', 'PT', 'US']"
+488,S6,,Sunrise Airways,"['CU', 'DO', 'GP', 'HT', 'PA']"
+489,S7,SBI,S7 Airlines,"['AE', 'AM', 'CN', 'KG', 'RU', 'TH', 'TJ', 'TM', 'TR', 'UZ']"
+490,S8,SWW,Sounds Air,['NZ']
+491,SA,SAA,South African Airways,"['BR', 'CD', 'GH', 'MU', 'MW', 'NA', 'NG', 'ZA', 'ZM', 'ZW']"
+492,SAW,,Cham Wings,"['AE', 'AM', 'IQ', 'IR', 'KW', 'LB', 'OM', 'PK', 'RU', 'SY']"
+493,SB,ACI,Aircalin,"['AU', 'FJ', 'JP', 'NC', 'NZ', 'PF', 'SG', 'VU', 'WF']"
+494,SC,CDG,Shandong Airlines,"['CN', 'HK', 'ID', 'JP', 'KR', 'TH', 'TW']"
+495,SF,DTH,Tassili Airlines,"['DZ', 'FR']"
+496,SG,SEJ,SpiceJet,"['AE', 'IN', 'LK', 'SA', 'TH']"
+497,SH,FLY,Sharp Airlines,['AU']
+498,SHS,,SHIRAK AVIA Limited Liability Company,"['AM', 'RU']"
+499,SI,SIH,Blue Islands,"['CH', 'ES', 'FR', 'GB', 'GG', 'IE', 'JE']"
+500,SJ,FOM,Sriwijaya Air,"['CN', 'ID', 'TL']"
+501,SK,CNO,SAS,"['AT', 'BE', 'CA', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FO', 'FR', 'GB', 'GR', 'HR', 'IE', 'IS', 'IT', 'JP', 'LB', 'LT', 'MA', 'ME', 'NL', 'NO', 'PL', 'PT', 'SE', 'SJ', 'TH', 'TR', 'US']"
+502,SL,RSL,Thai Lion Air,"['CN', 'ID', 'IN', 'JP', 'LK', 'NP', 'SG', 'TH', 'TW']"
+503,SM,SRL,Air Cairo,"['AE', 'AM', 'AT', 'AZ', 'BA', 'CH', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FR', 'GE', 'HU', 'IT', 'JO', 'KW', 'KZ', 'MA', 'MK', 'RS', 'SA', 'SK', 'UZ']"
+504,SN,BEL,Brussels Airlines,"['AM', 'AO', 'AT', 'BE', 'BF', 'BI', 'BJ', 'CD', 'CH', 'CI', 'CM', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FR', 'GB', 'GH', 'GM', 'GN', 'GR', 'HR', 'HU', 'IL', 'IT', 'LR', 'LT', 'MA', 'NO', 'PL', 'PT', 'RW', 'SE', 'SI', 'SL', 'SN', 'TG', 'TN', 'UG', 'US']"
+505,SP,SAT,SATA (Air Acores),['PT']
+506,SQ,SQC,Singapore Airlines,"['AE', 'AU', 'BD', 'BN', 'CA', 'CH', 'CN', 'DE', 'DK', 'ES', 'FR', 'GB', 'HK', 'ID', 'IN', 'IT', 'JP', 'KH', 'KR', 'LK', 'MM', 'MV', 'MY', 'NL', 'NP', 'NZ', 'PH', 'SG', 'TH', 'TR', 'TW', 'US', 'VN', 'ZA']"
+507,SR,SWR,SundAir,"['DE', 'EG', 'LB']"
+508,SS,CRL,Corsair,"['BJ', 'CA', 'CI', 'FR', 'GP', 'MG', 'ML', 'MQ', 'MU', 'RE', 'YT']"
+509,ST,GMI,AIR THANLWIN,['MM']
+510,SU,AFL,Aeroflot,"['AE', 'AM', 'AZ', 'BY', 'CN', 'CU', 'EG', 'IN', 'IR', 'KG', 'KZ', 'LK', 'MV', 'RU', 'SC', 'TH', 'TR', 'UZ']"
+511,SV,SVA,Saudi Arabian Airlines,"['AE', 'AT', 'BD', 'BH', 'CH', 'CN', 'DE', 'DZ', 'EG', 'ES', 'ET', 'FR', 'GB', 'GR', 'ID', 'IN', 'IT', 'JO', 'KE', 'KR', 'KW', 'LB', 'MA', 'MU', 'MV', 'MY', 'NG', 'NL', 'OM', 'PH', 'PK', 'QA', 'SA', 'SD', 'SG', 'TH', 'TN', 'TR', 'TZ', 'US']"
+512,SY,SCX,Sun Country,"['AW', 'BZ', 'CA', 'CR', 'DO', 'HN', 'JM', 'KY', 'MX', 'PR', 'SX', 'TC', 'US', 'VI']"
+513,SZ,WOW,Somon Air,"['AE', 'CN', 'DE', 'IN', 'IR', 'KZ', 'RU', 'SA', 'TJ', 'TR', 'UZ']"
+514,T3,EZE,Eastern Airways,"['FR', 'GB', 'JE']"
+515,T5,,Turkmenistan Airlines,"['AE', 'CN', 'DE', 'GB', 'IN', 'IT', 'KZ', 'RU', 'TM', 'TR', 'VN']"
+516,T6,TVR,AirSWIFT,['PH']
+517,T7,TJT,Twin Jet,"['DE', 'FR', 'IT']"
+518,T9,TSX,Turpial Airlines,"['CO', 'DO', 'PA', 'VE']"
+519,TA,,Avianca El Salvador,"['NI', 'SV', 'US']"
+520,TAN,,ZanAir,['TZ']
+521,TB,,TUI fly,"['AL', 'AT', 'BE', 'BG', 'CU', 'CV', 'CY', 'DO', 'DZ', 'EG', 'ES', 'FI', 'FR', 'GM', 'GR', 'HR', 'IT', 'JM', 'MA', 'ME', 'MX', 'NL', 'PT', 'RS', 'SN', 'TN', 'TR']"
+522,TBZ,,ATA Airlines,"['IQ', 'IR', 'TR']"
+523,TC,ATC,Air Tanzania,"['BI', 'CD', 'CN', 'IN', 'KE', 'KM', 'TZ', 'UG', 'ZM', 'ZW']"
+524,TEZ,,TEZ Jet,['KG']
+525,TF,SCW,Braathens Regional Airways,"['DK', 'FI', 'FR', 'NO', 'SE']"
+526,TG,THA,Thai Airways International,"['AU', 'BD', 'CH', 'CN', 'DE', 'DK', 'FR', 'GB', 'HK', 'ID', 'IN', 'JP', 'KH', 'KR', 'MM', 'MY', 'PH', 'PK', 'SA', 'SE', 'SG', 'TH', 'TW']"
+527,THU,,Thunder Airlines,['CA']
+528,TJ,,Tradewind Aviation,"['AG', 'AI', 'BL', 'PR', 'US', 'VG', 'VI']"
+529,TK,THY,Turkish Airlines,"['AE', 'AO', 'AR', 'AT', 'AZ', 'BA', 'BD', 'BE', 'BF', 'BG', 'BH', 'BJ', 'BR', 'CA', 'CD', 'CG', 'CH', 'CI', 'CM', 'CN', 'CO', 'CU', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DZ', 'EE', 'EG', 'ER', 'ES', 'ET', 'FI', 'FR', 'GA', 'GB', 'GE', 'GH', 'GM', 'GN', 'GR', 'HK', 'HR', 'HU', 'ID', 'IE', 'IL', 'IN', 'IQ', 'IR', 'IT', 'JO', 'JP', 'KE', 'KG', 'KR', 'KW', 'KZ', 'LB', 'LK', 'LT', 'LU', 'LV', 'MA', 'MD', 'ME', 'MG', 'MK', 'ML', 'MN', 'MR', 'MT', 'MU', 'MV', 'MX', 'MY', 'MZ', 'NE', 'NG', 'NL', 'NO', 'NP', 'OM', 'PA', 'PH', 'PK', 'PL', 'PT', 'QA', 'RO', 'RS', 'RU', 'RW', 'SA', 'SC', 'SE', 'SG', 'SI', 'SL', 'SN', 'SO', 'SS', 'TD', 'TH', 'TJ', 'TM', 'TN', 'TR', 'TW', 'TZ', 'UG', 'US', 'UZ', 'VE', 'VN', 'ZA', 'ZM']"
+530,TL,TMA,AIRNORTH,"['AU', 'TL']"
+531,TM,LAM,LAM,"['MZ', 'TZ', 'ZA', 'ZM', 'ZW']"
+532,TN,THT,Air Tahiti Nui,"['FR', 'JP', 'NZ', 'PF', 'US']"
+533,TO,PSD,Transavia France,"['AE', 'AL', 'AM', 'AT', 'BG', 'CV', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EG', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'IE', 'IL', 'IS', 'IT', 'JO', 'LB', 'MA', 'ME', 'MT', 'NO', 'PT', 'SE', 'SI', 'SN', 'TN', 'TR']"
+534,TOM,,TUI Airways,"['CV', 'EG', 'GB', 'HR', 'MA', 'MX']"
+535,TP,TAP,TAP,"['AO', 'AT', 'BE', 'BR', 'CA', 'CH', 'CV', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GH', 'GM', 'GW', 'IE', 'IL', 'IT', 'LU', 'MA', 'MX', 'MZ', 'NL', 'NO', 'PL', 'PT', 'SE', 'SN', 'ST', 'US', 'VE']"
+536,TR,TGW,Scoot,"['AU', 'CN', 'DE', 'GR', 'HK', 'ID', 'IN', 'JP', 'KR', 'LA', 'MO', 'MY', 'PH', 'SA', 'SG', 'TH', 'TW', 'VN']"
+537,TS,TSC,Air Transat,"['BE', 'CA', 'CH', 'CO', 'CR', 'CU', 'DO', 'ES', 'FR', 'GB', 'GP', 'GR', 'HR', 'HT', 'IE', 'IT', 'JM', 'MQ', 'MX', 'NL', 'PA', 'PR', 'PT', 'SV', 'SX', 'US']"
+538,TU,TAR,Tunisair,"['AT', 'BE', 'BF', 'CA', 'CH', 'CI', 'DE', 'DZ', 'EG', 'ES', 'FR', 'GB', 'GN', 'IT', 'LY', 'MA', 'ML', 'MR', 'NE', 'SA', 'SN', 'TN', 'TR']"
+539,TV,VEX,Tibet Airlines,"['CN', 'NP']"
+540,TW,TWA,T'Way Air,"['AU', 'CN', 'GU', 'HK', 'JP', 'KG', 'KR', 'MN', 'MP', 'MY', 'PH', 'SG', 'TH', 'TW', 'VN']"
+541,TX,TAN,Air Caraibes,"['BE', 'BL', 'BS', 'DE', 'DM', 'DO', 'EG', 'ES', 'FR', 'GB', 'GF', 'GP', 'HT', 'IE', 'IT', 'MA', 'MF', 'MQ', 'MX', 'PT', 'SX', 'ZA']"
+542,TY,IWD,Air Caledonie,['NC']
+543,TZ,SCO,Tsaradia,['MG']
+544,U2,UFS,easyJet,"['AL', 'AT', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EG', 'ES', 'FI', 'FR', 'GB', 'GI', 'GR', 'HR', 'HU', 'IL', 'IM', 'IS', 'IT', 'JE', 'JO', 'LU', 'MA', 'ME', 'MK', 'MT', 'NL', 'PL', 'PT', 'RS', 'SE', 'SI', 'TN', 'TR']"
+545,U4,PMT,Buddha Air,"['IN', 'NP']"
+546,U6,SVR,Ural Airlines,"['KG', 'LA', 'RU', 'TJ']"
+547,U8,RNV,TUS Airways,"['AE', 'CY', 'DE', 'FR', 'GR', 'IL', 'JO']"
+548,UA,UAL,United Airlines,"['AE', 'AG', 'AR', 'AU', 'AW', 'BB', 'BE', 'BM', 'BQ', 'BR', 'BS', 'BZ', 'CA', 'CH', 'CL', 'CN', 'CO', 'CR', 'CU', 'CW', 'DE', 'DO', 'EC', 'ES', 'FM', 'FR', 'GB', 'GH', 'GR', 'GT', 'GU', 'HK', 'HN', 'HR', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'JP', 'KN', 'KR', 'KY', 'LC', 'MH', 'MP', 'MX', 'NG', 'NI', 'NL', 'NZ', 'PA', 'PE', 'PF', 'PH', 'PR', 'PT', 'PW', 'SE', 'SG', 'SV', 'SX', 'TC', 'TT', 'TW', 'US', 'VI', 'ZA']"
+549,UB,UBA,Myanmar National Airlines,"['CN', 'MM', 'SG', 'TH']"
+550,UD,HER,UBD,"['AM', 'DE', 'DK', 'IQ', 'LB', 'NL', 'SY', 'TR']"
+551,UG,TUI,Tunisair Express,"['DZ', 'IT', 'LY', 'MT', 'TN']"
+552,UI,ECA,Auric Air,['TZ']
+553,UJ,,Almasria,"['DJ', 'EG', 'IT', 'KW', 'RU']"
+554,UK,,Vistara,"['AE', 'BD', 'DE', 'FR', 'GB', 'IN', 'LK', 'MU', 'MV', 'NP', 'OM', 'SA', 'SG', 'TH']"
+555,UL,ALK,SriLankan Airlines,"['AE', 'AU', 'BD', 'CN', 'DE', 'FR', 'GB', 'ID', 'IN', 'JP', 'KR', 'KW', 'LK', 'MV', 'MY', 'NP', 'PK', 'QA', 'SA', 'SG', 'TH']"
+556,UM,AZW,Air Zimbabwe,"['TZ', 'ZA', 'ZW']"
+557,UO,HKE,Hong Kong Express,"['CN', 'HK', 'JP', 'KR', 'TH', 'TW', 'VN']"
+558,UP,BHS,Bahamasair,"['BS', 'CU', 'HT', 'TC', 'US']"
+559,UQ,OCM,Urumqi Airlines,"['CN', 'HK']"
+560,UR,,Uganda Airlines,"['BI', 'CD', 'KE', 'SO', 'SS', 'TZ', 'UG', 'ZA']"
+561,UT,UTA,UTair Aviation,"['AE', 'AM', 'AZ', 'KG', 'RU', 'TJ', 'TR', 'UZ']"
+562,UU,REU,Air Austral,"['BE', 'FR', 'KE', 'KM', 'MG', 'MU', 'RE', 'SC', 'TH', 'YT', 'ZA']"
+563,UX,AEA,Air Europa Lineas Aereas,"['AR', 'BE', 'BO', 'BR', 'CH', 'CO', 'CU', 'CV', 'DE', 'DO', 'EC', 'ES', 'FR', 'GB', 'GR', 'HN', 'IL', 'IT', 'MA', 'MX', 'NL', 'PA', 'PE', 'PT', 'PY', 'TN', 'US', 'UY', 'VE']"
+564,UZ,BRQ,Buraq Air,"['LY', 'TN', 'TR']"
+565,V0,VCV,CONVIASA,"['BO', 'BR', 'CU', 'MX', 'NI', 'VE']"
+566,V5,RYL,Aerovias DAP,['CL']
+567,V7,VOE,Volotea,"['AT', 'BE', 'BG', 'CZ', 'DE', 'DK', 'DZ', 'ES', 'FR', 'GB', 'GR', 'HR', 'IT', 'LU', 'MA', 'PT']"
+568,V8,VAS,Iliamna Air Taxi,['US']
+569,VA,VAU,Virgin Australia International,"['AU', 'CC', 'CX', 'FJ', 'ID', 'JP', 'NZ', 'VU', 'WS']"
+570,VB,VIV,VivaAerobus,"['CO', 'CU', 'EC', 'MX', 'US']"
+571,VC,VAL,Sterling Airways-Aleutian Airways,['US']
+572,VE,VLE,Easyfly,['CO']
+573,VG,VLM,VIPPER BV,"['AT', 'BE', 'CZ', 'DE', 'FR', 'GB', 'IE', 'IT', 'LU', 'NL', 'PL', 'SI', 'SK', 'TR']"
+574,VJ,JTY,VietJet Air,"['AU', 'HK', 'ID', 'IN', 'JP', 'KR', 'MY', 'SG', 'TH', 'TW', 'VN']"
+575,VN,HVN,Vietnam Airlines,"['AU', 'CN', 'DE', 'FR', 'GB', 'HK', 'ID', 'IN', 'IR', 'JP', 'KH', 'KR', 'LA', 'MY', 'SG', 'TH', 'TW', 'US', 'VN']"
+576,VO,TYR,Universal Air Charter and Management Lt,"['CY', 'IL']"
+577,VP,VSP,Flyme,['MV']
+578,VQ,,Novoair,"['BD', 'IN']"
+579,VR,TCV,TACV Cabo Verde Airlines,"['CV', 'FR', 'PT']"
+580,VRH,,Varesh Airlines,"['GE', 'IQ', 'IR', 'SA', 'TJ']"
+581,VS,VIR,Virgin Atlantic Airways,"['AE', 'AG', 'BB', 'BS', 'CN', 'GB', 'GD', 'IL', 'IN', 'JM', 'LC', 'MV', 'NG', 'TC', 'US', 'VC', 'ZA']"
+582,VT,VTA,Air Tahiti,"['CK', 'PF']"
+583,VU,VUN,Vietravel Airlines,"['TH', 'VN']"
+584,VY,VLG,Vueling Airlines,"['AT', 'BE', 'CH', 'CV', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EG', 'ES', 'FI', 'FR', 'GB', 'GM', 'GR', 'HR', 'IE', 'IL', 'IS', 'IT', 'JO', 'LB', 'MA', 'MT', 'NL', 'NO', 'PT', 'SE', 'SN', 'TN']"
+585,VZ,MYT,Thai Vietjet Air,"['JP', 'KH', 'SG', 'TH', 'TW', 'VN']"
+586,W3,FYH,Arik Air Limited,['NG']
+587,W4,BES,Wizz Air Malta,"['AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'IL', 'IS', 'IT', 'LU', 'MA', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SE']"
+588,W5,IRM,Mahan Air,"['AE', 'CN', 'IN', 'IQ', 'IR', 'PK', 'RU', 'TH', 'TR']"
+589,W6,WZZ,Wizz Air,"['AE', 'AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IL', 'IS', 'IT', 'JO', 'KW', 'LT', 'LU', 'LV', 'MA', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'SA', 'SE', 'SI', 'SK', 'TR']"
+590,W9,SGR,Wizz Air UK,"['AL', 'BA', 'BG', 'CY', 'CZ', 'EE', 'EG', 'ES', 'FR', 'GB', 'GR', 'HR', 'IL', 'IS', 'IT', 'JO', 'LT', 'LV', 'MA', 'ME', 'MK', 'NO', 'PL', 'PT', 'RO', 'RS', 'SI', 'SK', 'TR']"
+591,WB,RWD,RwandAir,"['AE', 'BE', 'BI', 'BJ', 'CF', 'CG', 'CM', 'FR', 'GA', 'GB', 'GH', 'IN', 'KE', 'NG', 'QA', 'RW', 'TZ', 'UG', 'ZA', 'ZM', 'ZW']"
+592,WE,CWC,Thai Smile,"['IN', 'KH', 'LA', 'MY', 'NP', 'TH', 'TW', 'VN']"
+593,WF,WIF,Wideroe,"['DE', 'DK', 'ES', 'FO', 'FR', 'GB', 'IE', 'IT', 'NO', 'SE']"
+594,WG,SWG,Sunwing,"['AW', 'CA', 'CR', 'CU', 'DO', 'JM', 'MX', 'SX', 'US']"
+595,WJ,,Jetsmart Airlines,"['AR', 'BR', 'CL', 'PE', 'PY']"
+596,WK,EDW,Edelweiss Air,"['BG', 'CA', 'CH', 'CO', 'CR', 'CU', 'CV', 'CY', 'DO', 'EG', 'ES', 'FR', 'GB', 'GR', 'HR', 'IE', 'IS', 'IT', 'JM', 'JO', 'LK', 'MA', 'ME', 'MK', 'MU', 'MV', 'MX', 'NO', 'OM', 'PT', 'RS', 'SC', 'TH', 'TN', 'TR', 'TZ', 'US', 'ZA']"
+597,WM,,Winair,"['AG', 'AI', 'AW', 'BB', 'BL', 'BQ', 'CW', 'DM', 'HT', 'KN', 'LC', 'SX', 'VG']"
+598,WN,SWA,Southwest Airlines,"['AW', 'BS', 'BZ', 'CR', 'CU', 'DO', 'JM', 'KY', 'MX', 'PR', 'TC', 'US']"
+599,WO,WOA,Swoop,"['CA', 'DO', 'JM', 'MX', 'US']"
+600,WP,,Wasaya Airways,['CA']
+601,WS,WJA,WestJet,"['AG', 'AW', 'BB', 'BM', 'BQ', 'BS', 'BZ', 'CA', 'CR', 'CU', 'CW', 'DO', 'ES', 'FR', 'GB', 'HN', 'IE', 'IT', 'JM', 'JP', 'KY', 'LC', 'MX', 'PR', 'SX', 'TC', 'US']"
+602,WV,SWV,FlyNamibia,"['NA', 'ZA']"
+603,WW,BMI,Venezolana,"['DO', 'PA', 'VE']"
+604,WY,OMA,Oman Air,"['AE', 'BD', 'BH', 'CH', 'CN', 'DE', 'EG', 'FR', 'GB', 'ID', 'IN', 'IT', 'JO', 'KW', 'LK', 'MV', 'MY', 'OM', 'PH', 'PK', 'QA', 'RU', 'SA', 'TH', 'TR', 'TZ']"
+605,WZ,WSF,Red Wings,"['AE', 'AM', 'AZ', 'BY', 'EG', 'IL', 'KG', 'KZ', 'LK', 'RU', 'TR', 'UZ']"
+606,X3,HLX,TUIfly,"['AT', 'BE', 'CV', 'CY', 'DE', 'EG', 'ES', 'FI', 'GR', 'IT', 'LU', 'MA', 'MT', 'PT', 'TR']"
+607,X4,,Air Excursions LLC,['US']
+608,XJ,MES,Thai Airasia X,"['AU', 'CN', 'JP', 'KR', 'TH']"
+609,XK,CCM,Air Corsica,"['AT', 'BE', 'CH', 'FR', 'IT']"
+610,XLL,,Air Excel,['TZ']
+611,XP,CXP,AVELO,"['PR', 'US']"
+612,XQ,SXS,SunExpress,"['AE', 'AL', 'AT', 'BE', 'BG', 'BH', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EG', 'ES', 'FI', 'FR', 'GB', 'GE', 'HU', 'IE', 'IL', 'IQ', 'IT', 'LB', 'MK', 'NL', 'NO', 'PL', 'RS', 'SE', 'TR']"
+613,XR,,Corendon Airlines Europe,"['DE', 'ES', 'GR']"
+614,XU,,African Express Airways,"['KE', 'SO', 'SS']"
+615,XY,,Flynas,"['AE', 'AL', 'AM', 'AT', 'AZ', 'BA', 'CZ', 'EG', 'FR', 'GE', 'IN', 'IQ', 'JO', 'KG', 'KW', 'KZ', 'MA', 'ME', 'MV', 'OM', 'PK', 'QA', 'SA', 'TR', 'UZ']"
+616,XZ,,AEROITALIA SRL,"['AT', 'ES', 'GR', 'IT', 'RO']"
+617,Y2,GSM,Air Century,"['AW', 'CO', 'CU', 'CW', 'DO', 'HT', 'SX']"
+618,Y4,VOI,Volaris,"['CO', 'CR', 'GT', 'MX', 'PE', 'US']"
+619,Y7,,NordStar Airlines,['RU']
+620,Y8,YZR,Suparna Airlines,['CN']
+621,Y9,IRK,Lynx Air,"['CA', 'US']"
+622,YB,,Harbour Air Ltd,"['CA', 'US']"
+623,YC,,Yamal Airlines,"['RU', 'TJ']"
+624,YI,,FLY OYA,"['AE', 'EG', 'LY', 'TR']"
+625,YK,KYV,Avia Traffic Company LLC,"['AF', 'EG', 'KG', 'KZ', 'RU', 'TJ', 'TR']"
+626,YL,LLM,Libyan Wings,"['LY', 'TN', 'TR']"
+627,YN,,Air Creebec,['CA']
+628,YP,,Air Premia,"['DE', 'JP', 'KR', 'TH', 'US', 'VN']"
+629,YQ,,TAR,['MX']
+630,YR,,Scenic Airlines,['US']
+631,YS,RAE,Flightlink Limited,"['KE', 'TZ']"
+632,YT,TGA,Yeti Airlines Domestic,['NP']
+633,YU,ADM,EuroAtlantic Airways,"['GW', 'PT']"
+634,Z0,,Norse Atlantic UK Limited,"['BB', 'GB', 'JM', 'US']"
+635,Z2,,Philippines AirAsia,"['CN', 'HK', 'JP', 'KR', 'MO', 'MY', 'PH', 'TH', 'TW']"
+636,Z8,AZN,Amaszonas SA,"['BO', 'CL', 'PY']"
+637,Z9,,MYAirline,"['MY', 'TH']"
+638,ZA,SUW,Sky Angkor Airlines Co. Ltd,"['KH', 'KR', 'TH']"
+639,ZB,MON,Air Albania,"['AL', 'DE', 'GB', 'GR', 'IT', 'TR']"
+640,ZD,,EWA Air,"['KM', 'MG', 'RE', 'TZ', 'YT']"
+641,ZE,LCD,EASTAR JET,"['JP', 'KR', 'TW']"
+642,ZF,,AZUR air,"['EG', 'RU', 'TR']"
+643,ZH,CSZ,Shenzhen Airlines,"['CN', 'ES', 'GB', 'HK', 'JP', 'KH', 'KR', 'MO', 'MY', 'SG', 'TH', 'TW', 'VN']"
+644,ZL,RXA,Regional Express,['AU']
+645,ZN,,Zambia Airways (2014) Limited,"['ZA', 'ZM']"
+646,ZP,AZQ,Paranair,"['AR', 'BO', 'BR', 'PY', 'UY']"
+647,ZU,HCY,Azman Air,"['NG', 'TR']"
+648,ZV,AMW,Aerus,['MX']
