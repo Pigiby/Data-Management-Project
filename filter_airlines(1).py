@@ -11,7 +11,8 @@ with open(input_file, 'r', newline='') as csvfile_in, open(output_file, 'w', new
     writer = csv.writer(csvfile_out)
 
     header = next(reader)
-    writer.writerow(header)
+    new_header =  [value for idx, value in enumerate(header) if idx not in columns_to_remove]
+    writer.writerow(new_header)
 
     for row in reader:
         if should_include_row(row):
