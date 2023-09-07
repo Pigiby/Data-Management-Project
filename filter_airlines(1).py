@@ -1,7 +1,7 @@
 import csv
 
 def should_include_row(row):
-    return row[7] == 'Y'
+    return row[7] == 'Y' and row[3] != '' and row[3] != '-' and row[4]!='N\A' and row[4] != ''
 
 input_file = "airlines(1).csv"
 output_file = "filtered_airlines.csv"
