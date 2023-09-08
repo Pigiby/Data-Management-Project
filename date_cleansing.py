@@ -1,6 +1,7 @@
 import csv
-import _strptime
 from datetime import datetime
+
+
 input_file = "filtered_flights.csv"
 output_file = "filtered_flights_extended.csv"
 columns_to_remove = [11, 13, 17]
