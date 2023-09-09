@@ -48,6 +48,6 @@ create table airports_data(
 	latitude float,
 	longitude float,
 	altitude float,
-	timezone int,
+	timezone float,
 	tz varchar(255)
 )
