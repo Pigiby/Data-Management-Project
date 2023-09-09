@@ -12,19 +12,21 @@ with open(input_file, 'r', newline='',encoding='latin-1') as csvfile_in, open(ou
     writer.writerow(header)
     for row in reader:
         if row[3] != '':
-           row[3] = float(row[3])
+           row[3] = int(row[3])
+        else:
+           print("ciao")
         if row[4] != '':
-           row[4] = float(row[4])
+           row[4] = int(row[4])
         if row[5] != '':
-           row[5] = float(row[5])
+           row[5] = int(row[5])
         if row[6] != '':
-           row[6] = float(row[6])
+           row[6] = int(row[6])
         if row[7] != '':
             unit_cost = row[7].replace(",", ".")
-            row[7] = float(unit_cost[1:])
+            row[7] = float(unit_cost[1:])*1000000
         if row[8] != '':
             total_cost = row[8].replace(",", ".")
-            row[8] = float(total_cost[1:])
+            row[8] = float(total_cost[1:])*1000000
         if row[9] != '':
            row[9] = float(row[9])
 
