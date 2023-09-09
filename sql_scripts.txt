@@ -23,3 +23,17 @@ CREATE TABLE flight_data (
     AVG_CO2_emissions_for_this_route int,
     CO2_percentage int
 );
+
+
+ create table fleet_data(
+  Parent_airline varchar(255),
+  Airline varchar(255),
+  Aircraft_Type varchar(255),
+  Current int,
+  Future int,
+  Historic int,
+  Total int,
+  Unit_cost_$ float,
+  Total_cost_$ float,
+  Average_age float
+)
