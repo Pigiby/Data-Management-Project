@@ -65,3 +65,22 @@ create table airplanes_data(
   iata_code varchar(255),
   icao_code varchar(255)
 )
+
+
+
+
+LOADING SNOWFLAKE SCHEMA into DB
+create table DATE(
+	date_key serial PRIMARY KEY,
+	day int,
+	month int,
+	year int,
+	time time
+)
+insert into date(day,month,year,time)
+(select distinct departure_day,departure_month,departure_year,departure_time 
+ from flight_data
+ union 
+ select distinct arrival_day,arrival_month,arrival_year,arrival_time 
+ from flight_data)
+
