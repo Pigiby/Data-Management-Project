@@ -14,13 +14,19 @@ with open(input_file, 'r', newline='',encoding='latin-1') as csvfile_in, open(ou
         if row[3] != '':
            row[3] = int(row[3])
         else:
-           print("ciao")
+           row[3] = 0
         if row[4] != '':
            row[4] = int(row[4])
+        else:
+           row[4] = 0
         if row[5] != '':
            row[5] = int(row[5])
+        else:
+           row[5] = 0
         if row[6] != '':
            row[6] = int(row[6])
+        else:
+           row[6] = 0
         if row[7] != '':
             unit_cost = row[7].replace(",", ".")
             row[7] = float(unit_cost[1:])*1000000
