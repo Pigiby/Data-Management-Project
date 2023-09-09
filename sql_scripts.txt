@@ -118,7 +118,7 @@ create table airline(
 )
 
 insert into airline (airline, iata_code, icao_code, base_country)
-select * from airline
+select * from airlines_data
 
 
 
@@ -140,3 +140,14 @@ insert into aircraft (aircraft_type, iata_code, icao_code, airline, current, fut
 select aircraft_type, airplanes_data.iata_code, airplanes_data.icao_code, airline_key, fleet_data.Current, fleet_data.Future, fleet_data.Historic, fleet_data.Average_age, fleet_data.Unit_cost_$
 from airplanes_data, airline, fleet_data
 where fleet_data.aircraft_type = airplanes_data.name and airline.airline = fleet_data.airline
+
+create table flight_number(
+	flight_number_key serial,
+	flight_number varchar(255),
+	airline int NOT NULL references airline(airline_key)
+)
+
+insert into flight_number(flight_number,airline)
+select distinct flight_data.flight_number, airline.airline_key
+from flight_data,airline
+where flight_data.airline_name = airline.airline
