@@ -4,12 +4,12 @@ from datetime import datetime
 
 
 def should_include_row(row,airlines):
-    return row[5] in airlines
+    return row[1] in airlines or row[0] in airlines
 
 
 input_file = "filtered_airlines.csv"
-input_file_1 = 'filtered_flights_extended.csv'
-output_file = "filtered_flights_extended__.csv"
+input_file_1 = '../original_csv_files/fleet_data.csv'
+output_file = "fleet_data_extended.csv"
 with open(input_file, 'r', newline='') as csvfile_in, open(input_file_1, 'r', newline='') as csvfile_in_1, open(output_file, 'w', newline='') as csvfile_out:
     reader = csv.reader(csvfile_in)
     reader_1 = csv.reader(csvfile_in_1)
@@ -22,7 +22,7 @@ with open(input_file, 'r', newline='') as csvfile_in, open(input_file_1, 'r', ne
     header = next(reader)
     airlines = []
     for row in reader:
-        airlines.append(row[1])
+        airlines.append(row[0])
     for row in reader_1:
         if should_include_row(row,airlines):
             writer.writerow(row)

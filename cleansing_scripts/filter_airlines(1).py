@@ -3,7 +3,7 @@ import csv
 def should_include_row(row):
     return row[7] == 'Y' and row[3] != '' and row[3] != '-' and row[4]!='N\A' and row[4] != ''
 
-input_file = "airlines(1).csv"
+input_file = "../original_csv_files/airlines(1).csv"
 output_file = "filtered_airlines.csv"
 columns_to_remove = [0,2,5,7]
 with open(input_file, 'r', newline='') as csvfile_in, open(output_file, 'w', newline='') as csvfile_out:

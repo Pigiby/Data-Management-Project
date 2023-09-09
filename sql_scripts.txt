@@ -63,5 +63,5 @@ create table airlines_data(
 create table airplanes_data(
 	name varchar(255),
   iata_code varchar(255),
-  icao_code varchar(255),
+  icao_code varchar(255)
 )

@@ -1,7 +1,7 @@
 import csv
 
 input_file = "filtered_fleet_data.csv"
-output_file = "filtered_fleet_data_final.csv"
+output_file = "../final_files/filtered_fleet_data_final.csv"
 
 
 with open(input_file, 'r', newline='',encoding='latin-1') as csvfile_in, open(output_file, 'w', newline='') as csvfile_out:
