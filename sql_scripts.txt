@@ -77,6 +77,7 @@ create table DATE(
 	year int,
 	time time
 )
+
 insert into date(day,month,year,time)
 (select distinct departure_day,departure_month,departure_year,departure_time 
  from flight_data
@@ -84,3 +85,58 @@ insert into date(day,month,year,time)
  select distinct arrival_day,arrival_month,arrival_year,arrival_time 
  from flight_data)
 
+
+
+
+create table airport(
+	airport_key serial PRIMARY KEY,
+	airport varchar(255),
+	city varchar(255),
+	country varchar(255),
+	iata_code varchar(255),
+	icao_code varchar(255),
+	latitude float,
+	longitude float,
+	altitude float,
+	timezone float,
+	tz varchar(255)
+)
+
+insert into airport(airport, city, country, iata_code, icao_code, latitude, longitude, altitude, timezone, tz)
+select * from airports_data
+
+
+
+
+
+create table airline(
+	airline_key serial PRIMARY KEY,
+	airline varchar(255),
+	iata_code varchar(255),
+	icao_code varchar(255),
+	base_country varchar(255)
+)
+
+insert into airline (airline, iata_code, icao_code, base_country)
+select * from airline
+
+
+
+create table aircraft(
+	aircraft_key serial PRIMARY KEY,
+	aircraft_type varchar(255),
+	iata_code varchar(255),
+	icao_code varchar(255),
+	airline int NOT NULL references airline(airline_key),
+	current int,
+	future int,
+	historic int,
+	avg_age float,
+	unit_cost_$ float
+)
+
+
+insert into aircraft (aircraft_type, iata_code, icao_code, airline, current, future, historic, avg_age, unit_cost_$)
+select aircraft_type, airplanes_data.iata_code, airplanes_data.icao_code, airline_key, fleet_data.Current, fleet_data.Future, fleet_data.Historic, fleet_data.Average_age, fleet_data.Unit_cost_$
+from airplanes_data, airline, fleet_data
+where fleet_data.aircraft_type = airplanes_data.name and airline.airline = fleet_data.airline
