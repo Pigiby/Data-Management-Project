@@ -37,3 +37,17 @@ CREATE TABLE flight_data (
   Total_cost_$ float,
   Average_age float
 )
+
+
+create table airports_data(
+	name varchar(255),
+	city varchar(255),
+	country varchar(255),
+	iata_code varchar(255),
+	icao_code varchar(255),
+	latitude float,
+	longitude float,
+	altitude float,
+	timezone int,
+	tz varchar(255)
+)
