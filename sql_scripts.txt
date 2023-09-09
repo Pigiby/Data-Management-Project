@@ -1,0 +1,25 @@
+#CREATE TABLES FOR CLEANED CSV FILES 
+
+CREATE TABLE flight_data (
+    from_airport_code varchar(255),
+    from_country varchar(255),
+    dest_airport_code varchar(255),
+    dest_country varchar(255),
+    aircraft_type varchar(255),
+    airline_number varchar(255),
+    airline_name varchar(255),
+    flight_number varchar(255),
+    departure_day int,
+    departure_month int,
+    departure_year int,
+    departure_time time,
+    arrival_day int,
+    arrival_month int,
+    arrival_year int,
+    arrival_time time,
+    duration int,
+    price float,
+    CO2_emissions int,
+    AVG_CO2_emissions_for_this_route int,
+    CO2_percentage int
+);
