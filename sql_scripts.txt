@@ -1,6 +1,6 @@
 #CREATE TABLES FOR CLEANED CSV FILES 
 
-CREATE TABLE flight_data (
+CREATE TABLE flight(
     from_airport_code varchar(255),
     from_country varchar(255),
     dest_airport_code varchar(255),
@@ -24,22 +24,20 @@ CREATE TABLE flight_data (
     CO2_percentage int
 );
 
+  create table fleet_data(
+  parent_airline varchar(255),
+  airline varchar(255),
+  aircraft_type varchar(255),
+  current int,
+  future int,
+  historic int,
+  total int,
+  unit_cost_$ float,
+  total_cost_$ float,
+  average_age float
+);
 
- create table fleet_data(
-  Parent_airline varchar(255),
-  Airline varchar(255),
-  Aircraft_Type varchar(255),
-  Current int,
-  Future int,
-  Historic int,
-  Total int,
-  Unit_cost_$ float,
-  Total_cost_$ float,
-  Average_age float
-)
-
-
-create table airports_data(
+create table airports(
 	name varchar(255),
 	city varchar(255),
 	country varchar(255),
@@ -50,21 +48,21 @@ create table airports_data(
 	altitude float,
 	timezone float,
 	tz varchar(255)
-)
-
-create table airlines_data(
+);
+create table airlines(
 	name varchar(255),
 	iata_code varchar(255),
 	icao_code varchar(255),
 	country varchar(255)
 )
+;
 
 
-create table airplanes_data(
-	name varchar(255),
+create table aircrafts(
+  name varchar(255),
   iata_code varchar(255),
   icao_code varchar(255)
-)
+);
 
 
 
