@@ -1,10 +1,11 @@
 import csv
 
 def should_include_row(row):
-    return row[7] == 'Y' and row[3] != '' and row[3] != '-' and row[4]!='N\A' and row[4] != ''
+    #active airlines, not null iata and icao codes
+    return row[7] == 'Y'
 
-input_file = "../original_csv_files/airlines(1).csv"
-output_file = "../final_files/filtered_airlines.csv"
+input_file = "airlines.csv"
+output_file = "filtered_airlines.csv"
 columns_to_remove = [0,2,5,7]
 with open(input_file, 'r', newline='') as csvfile_in, open(output_file, 'w', newline='') as csvfile_out:
     reader = csv.reader(csvfile_in)
@@ -16,8 +17,14 @@ with open(input_file, 'r', newline='') as csvfile_in, open(output_file, 'w', new
 
     for row in reader:
         if should_include_row(row):
+            if row[3] == '-' or row[3] == '\\N' or row[3] == 'N/A':
+                row[3] = ''
+            if row[4] == '-' or row[4] == '\\N' or row[4] == 'N/A':
+                row[4] = ''
+            if row[6] == '-' or row[6] == '\\N' or row[6] == 'N/A':
+                row[6] = ''
+            #airline in lowercase 
             row[1] = row[1].lower()
             new_row =  [value for idx, value in enumerate(row) if idx not in columns_to_remove]
-            print(new_row)
             writer.writerow(new_row)
 print("CSV file filtered and saved as", output_file)

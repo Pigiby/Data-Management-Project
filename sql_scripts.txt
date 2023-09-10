@@ -144,10 +144,48 @@ where fleet_data.aircraft_type = airplanes_data.name and airline.airline = fleet
 create table flight_number(
 	flight_number_key serial,
 	flight_number varchar(255),
-	airline int NOT NULL references airline(airline_key)
+	airline int NOT NULL references airline(airline_key),
+	airport_src int NOT NULL references airport(airport_key),
+	airport_dest int NOT NULL references airport(airport_key)
 )
 
-insert into flight_number(flight_number,airline)
-select distinct flight_data.flight_number, airline.airline_key
-from flight_data,airline
-where flight_data.airline_name = airline.airline
+insert into flight_number(flight_number,airline,airport_src,airport_dest)
+select distinct flight_data.flight_number, airline.airline_key,a1.airport_key,a2.airport_key
+from flight_data,airline,airport a1, airport a2
+where flight_data.airline_number = airline.iata_code and flight_data.from_airport_code = a1.iata_code and flight_data.dest_airport_code = a2.iata_code
+
+
+create table flight(
+	departure_date int references DATE(date_key),
+	arrival_date int references DATE(date_key),
+	departure_airport int references airport(airport_key),
+	arrival_airport int references airport(airport_key),
+	flight_number int references flight_number(flight_number_key),
+	aircraft int references aircraft(aircraft_key),
+	duration int,
+	price float,
+	CO2_emissions int,
+	AVG_CO2_emissions_for_this_route int,
+	CO2_percentage int,
+	PRIMARY KEY (departure_date, arrival_date,departure_airport,arrival_airport,flight_number,aircraft)
+)
+insert into flight
+select distinct d1.date_key,d2.date_key, a1.airport_key,a2.airport_key,fn.flight_number_key,c.aircraft_key, f.duration, f.price,f.co2_emissions,f.AVG_CO2_emissions_for_this_route,f.CO2_percentage 
+from date d1, date d2,airport a1, airport a2,flight_number fn , flight_data f,aircraft c,airline al
+where (d1.day = f.departure_day and d1.month = f.departure_month and d1.year = f.departure_year and d1.time = f.departure_time) and
+	(d2.day = f.arrival_day and d2.month = f.arrival_month and d2.year = f.arrival_year and d2.time = f.arrival_time) and
+	(f.flight_number = fn.flight_number and fn.airport_src = a1.airport_key and fn.airport_dest = a2.airport_key)and 
+	c.aircraft_type = f.aircraft_type
+	
+	
+	
+select * from flight_data where departure_day = 2 and departure_month = 5 and dest_airport_code = 'FRA' and from_airport_code = 'BRU'
+
+select * from date where date_key = 2877
+
+select * from airport where airport_key = 300 or airport_key = 337
+
+select * from flight_number where flight_number_key = 1302
+
+
+
