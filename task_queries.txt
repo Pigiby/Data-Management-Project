@@ -1,21 +1,87 @@
-#FOR EACH ROUTE RETURN THE AIRCRAFT THAT HAD THE LEAST CO2_EMISSION
+#1 ---------- FOR EACH ROUTE RETURN THE AIRCRAFT THAT HAD THE LEAST CO2_EMISSION -----------
 
-select distinct a1.city,a2.city,ac.aircraft_type,f.co2_emissions
+select distinct a1.airport,a2.airport,ac.aircraft_type,f.co2_emissions
 from flight f join airport a1 on f.departure_airport = a1.airport_key join airport a2 on f.arrival_airport = a2.airport_key join aircraft ac on ac.aircraft_key = f.aircraft
 where f.co2_emissions <= all (select f2.co2_emissions
 							 from flight f2
 							 where f2.departure_airport = f.departure_airport and f2.arrival_airport = f.arrival_airport)
-order by a1.city,a2.city
+order by a1.airport,a2.airport
 
 
-#FOR EACH AIRLINE COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE
+#2 ------------ FOR EACH AIRLINE COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE ------------
 
 select distinct al.airline, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
 from flight f join airline al on f.airline = al.airline_key
 group by al.airline
 
 
-#FOR EACH AIRLINE RETURN ALL THE ROUTES
-select distinct a1.city,a2.city,al.airline
+#3 ---------- FOR EACH AIRLINE RETURN ALL THE ROUTES ---------------
+select distinct a1.airport,a2.airport,al.airline
 from flight f join airport a1 on f.departure_airport = a1.airport_key join airport a2 on a2.airport_key = f.arrival_airport join airline al on al.airline_key = f.airline
 order by al.airline
+
+
+
+#4 -------- FOR EACH AIRLINE RETURN THE MONTH WITH THE HIGHEST AVERAGE CO2_EMISSION PER MINUTE  --------------
+create view monthly_avg_per_minute as (select distinct a.airline, d.month, sum(f.co2_emissions)/sum(f.duration) as monthly
+									   from flight f join airline a on f.airline = a.airline_key join date d on f.departure_date = d.date_key
+									   group by a.airline, d.month
+									   order by a.airline, d.month)
+									   
+select airline, month, monthly
+from monthly_avg_per_minute
+where monthly <= ALL (select monthly
+					 from monthly_avg_per_minute m
+					 where m.airline = monthly_avg_per_minute.airline)
+
+
+
+#5 ----------- FOR EACH AIRLINE AND EACH MONTH RETURN THE NUMBER OF FLIGHTS -----------
+select airline_name, departure_month, count(*)
+from flights_data
+group by airline_name, departure_month
+order by airline_name, departure_month
+
+
+
+# 6 -----FOR EACH ROUTE RETURN THE AIRLINE WITH THE HIGHEST CO2_PERCENTAGE EMISSION wrt THE_AVG_EMISSION_FOR_THIS_ROUTE----
+select distinct a1.airport, a2.airport, a.airline, f.co2_percentage
+from flight f join airport a1 on f.departure_airport = a1.airport_key 
+	 join airport a2 on f.arrival_airport = a2.airport_key join airline a on f.airline = a.airline_key
+where f.co2_percentage >= ALL (select co2_percentage
+							  from flight f2
+							  where f.departure_airport = f2.departure_airport and
+							  		f.arrival_airport = f2.arrival_airport)
+
+
+# 7 ------ FOR EACH AIRPORT COUNT THE INCOMING/OUTGOING FLIGHTS --------
+select a.airport, d.month, count(*)
+from flight f join date d on f.departure_date = d.date_key, airport a
+where a.airport_key = f.departure_airport or a.airport_key = f.arrival_airport
+group by a.airport, d.month
+order by a.airport, d.month
+
+
+
+#8 ------- FOR EACH AIRLINE RETURN THE TOTAL NUMBER OF CURRENT AIRCRAFTS ---------
+select a.airline, sum(ac.current)
+from airline a join aircraft ac on a.airline_key = ac.airline
+group by a.airline
+order by a.airline
+
+
+
+#9 --------- TOP 10 MOST CURRENTLY USED AICRAFT TYPES ----------
+select ac.aircraft_type, sum(ac.current)
+from aircraft ac
+group by ac.aircraft_type
+order by sum(current) DESC
+limit 10
+
+
+
+#10 ---------- FOR EACH AIRLINE RETURN HOW MANY DIFFERENT AICRAFT TYPES IT OWNS ---------
+select a.airline, count(distinct ac.aircraft_type)
+from airline a join aircraft ac on a.airline_key = ac.airline
+where ac.current != 0
+group by a.airline
