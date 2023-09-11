@@ -1,0 +1,21 @@
+#FOR EACH ROUTE RETURN THE AIRCRAFT THAT HAD THE LEAST CO2_EMISSION
+
+select distinct a1.city,a2.city,ac.aircraft_type,f.co2_emissions
+from flight f join airport a1 on f.departure_airport = a1.airport_key join airport a2 on f.arrival_airport = a2.airport_key join aircraft ac on ac.aircraft_key = f.aircraft
+where f.co2_emissions <= all (select f2.co2_emissions
+							 from flight f2
+							 where f2.departure_airport = f.departure_airport and f2.arrival_airport = f.arrival_airport)
+order by a1.city,a2.city
+
+
+#FOR EACH AIRLINE COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE
+
+select distinct al.airline, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
+from flight f join airline al on f.airline = al.airline_key
+group by al.airline
+
+
+#FOR EACH AIRLINE RETURN ALL THE ROUTES
+select distinct a1.city,a2.city,al.airline
+from flight f join airport a1 on f.departure_airport = a1.airport_key join airport a2 on a2.airport_key = f.arrival_airport join airline al on al.airline_key = f.airline
+order by al.airline
