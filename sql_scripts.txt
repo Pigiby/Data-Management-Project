@@ -1,6 +1,6 @@
 #CREATE TABLES FOR CLEANED CSV FILES 
 
-CREATE TABLE flight(
+CREATE TABLE flights_data(
     from_airport_code varchar(255),
     from_country varchar(255),
     dest_airport_code varchar(255),
@@ -37,7 +37,7 @@ CREATE TABLE flight(
   average_age float
 );
 
-create table airports(
+create table airports_data(
 	name varchar(255),
 	city varchar(255),
 	country varchar(255),
@@ -49,7 +49,7 @@ create table airports(
 	timezone float,
 	tz varchar(255)
 );
-create table airlines(
+create table airlines_data(
 	name varchar(255),
 	iata_code varchar(255),
 	icao_code varchar(255),
@@ -58,7 +58,7 @@ create table airlines(
 ;
 
 
-create table aircrafts(
+create table aircrafts_data(
   name varchar(255),
   iata_code varchar(255),
   icao_code varchar(255)
@@ -68,7 +68,7 @@ create table aircrafts(
 
 
 LOADING SNOWFLAKE SCHEMA into DB
-create table DATE(
+create table date(
 	date_key serial PRIMARY KEY,
 	day int,
 	month int,
@@ -78,10 +78,10 @@ create table DATE(
 
 insert into date(day,month,year,time)
 (select distinct departure_day,departure_month,departure_year,departure_time 
- from flight_data
+ from flights_data
  union 
  select distinct arrival_day,arrival_month,arrival_year,arrival_time 
- from flight_data)
+ from flights_data)
 
 
 
