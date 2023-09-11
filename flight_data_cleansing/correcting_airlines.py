@@ -18,15 +18,20 @@ with open(input_file, 'r', newline='') as csvfile_in, open(input_file_1, 'r', ne
     writer.writerow(header_1)
     header = next(reader)
     airlines = []
+    iata_codes = []
     for row in reader:
         airlines.append(row[0])
+        iata_codes.append(row[1])
     for row in reader_1:
         if row[6] in airlines:
             writer.writerow(row)
         else:
+            i = 0
             for a in airlines:
                 if len(row[6]) < len(a) and row[6] in a:
-                    row[6] = a    
+                    if(row[5] == iata_codes[i]):
+                        row[6] = a    
+                i+=1
             writer.writerow(row)
 
 
