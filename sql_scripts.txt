@@ -112,13 +112,13 @@ create table airline(
 	airline varchar(255),
 	iata_code varchar(255),
 	icao_code varchar(255),
-	base_country varchar(255)
+	base_country varchar(255),
+	parent_airline varchar(255)
 )
 
-insert into airline (airline, iata_code, icao_code, base_country)
-select * from airlines_data
-
-
+insert into airline (airline, iata_code, icao_code, base_country, parent_airline)
+select distinct ad.name, ad.iata_code, ad.icao_code, ad.country, f.parent_airline
+from airlines_data ad left join fleet_data f on ad.name = f.airline
 
 create table aircraft(
 	aircraft_key serial PRIMARY KEY,
@@ -134,47 +134,50 @@ create table aircraft(
 )
 
 
-insert into aircraft (aircraft_type, iata_code, icao_code, airline, current, future, historic, avg_age, unit_cost_$)
-select aircraft_type, airplanes_data.iata_code, airplanes_data.icao_code, airline_key, fleet_data.Current, fleet_data.Future, fleet_data.Historic, fleet_data.Average_age, fleet_data.Unit_cost_$
-from airplanes_data, airline, fleet_data
-where fleet_data.aircraft_type = airplanes_data.name and airline.airline = fleet_data.airline
+insert into aircraft(aircraft_type, iata_code, icao_code, airline, current, future, historic, average_age, unit_cost_$)
+select distinct ac.name, ac.iata_code, ac.icao_code, a.airline_key, f.current, f.future, f.historic, f.average_age, f.unit_cost_$
+from aircrafts_data ac join fleet_data f on ac.name = f.aircraft_type join airline a on a.airline = f.airline
+order by airline_key
+
+
 
 create table flight_number(
-	flight_number_key serial,
-	flight_number varchar(255),
+	flight_number varchar(255) NOT NULL,
 	airline int NOT NULL references airline(airline_key),
 	airport_src int NOT NULL references airport(airport_key),
 	airport_dest int NOT NULL references airport(airport_key)
 )
 
-insert into flight_number(flight_number,airline,airport_src,airport_dest)
-select distinct flight_data.flight_number, airline.airline_key,a1.airport_key,a2.airport_key
-from flight_data,airline,airport a1, airport a2
-where flight_data.airline_number = airline.iata_code and flight_data.from_airport_code = a1.iata_code and flight_data.dest_airport_code = a2.iata_code
+insert into flight_number(flight_number,airline,airport_1,airport_2)
+select distinct f.flight_number, a.airline_key,a1.airport_key,a2.airport_key
+from flights_data f join airline a on f.airline_name = a.airline join airport a1 on f.from_airport_code = a1.iata_code join airport a2 on a2.iata_code = f.dest_airport_code
+
 
 
 create table flight(
-	departure_date int references DATE(date_key),
-	arrival_date int references DATE(date_key),
-	departure_airport int references airport(airport_key),
-	arrival_airport int references airport(airport_key),
-	flight_number int references flight_number(flight_number_key),
-	aircraft int references aircraft(aircraft_key),
-	duration int,
-	price float,
-	CO2_emissions int,
-	AVG_CO2_emissions_for_this_route int,
-	CO2_percentage int,
-	PRIMARY KEY (departure_date, arrival_date,departure_airport,arrival_airport,flight_number,aircraft)
+  departure_date int references date(date_key),
+  arrival_date int references date(date_key),
+  departure_airport int references airport(airport_key),
+  arrival_airport int references airport(airport_key),
+  aircraft int references aircraft(aircraft_key),
+  airline int references airline(airline_key),
+  duration int,
+  price float,
+  co2_emissions int,
+  avg_co2_emissions_for_this_route int,
+  co2_percentage int,
+  PRIMARY KEY (departure_date, arrival_date,departure_airport,arrival_airport,airline,aircraft)
 )
+
+
 insert into flight
-select distinct d1.date_key,d2.date_key, a1.airport_key,a2.airport_key,fn.flight_number_key,c.aircraft_key, f.duration, f.price,f.co2_emissions,f.AVG_CO2_emissions_for_this_route,f.CO2_percentage 
-from date d1, date d2,airport a1, airport a2,flight_number fn , flight_data f,aircraft c,airline al
-where (d1.day = f.departure_day and d1.month = f.departure_month and d1.year = f.departure_year and d1.time = f.departure_time) and
-	(d2.day = f.arrival_day and d2.month = f.arrival_month and d2.year = f.arrival_year and d2.time = f.arrival_time) and
-	(f.flight_number = fn.flight_number and fn.airport_src = a1.airport_key and fn.airport_dest = a2.airport_key)and 
-	c.aircraft_type = f.aircraft_type
-	
+select distinct d1.date_key,d2.date_key,a1.airport_key,a2.airport_key,ac.aircraft_key, al.airline_key,f.duration,f.price,f.co2_emissions,f.avg_co2_emissions_for_this_route,f.co2_percentage 
+from date d1 join flights_data f on (d1.day = f.departure_day and d1.month = f.departure_month and d1.year = f.departure_year and d1.time = f.departure_time) 
+      join date d2 on (d2.day = f.arrival_day and d2.month = f.arrival_month and d2.year = f.arrival_year and d2.time = f.arrival_time)
+      join airport a1 on a1.iata_code = f.from_airport_code
+      join airport a2 on a2.iata_code = f.dest_airport_code
+      join aircraft ac on ac.aircraft_type = f.aircraft_type
+      join airline al on (al.airline_key = ac.airline and al.airline = f.airline_name)
 	
 	
 select * from flight_data where departure_day = 2 and departure_month = 5 and dest_airport_code = 'FRA' and from_airport_code = 'BRU'
