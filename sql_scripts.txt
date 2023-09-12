@@ -67,7 +67,9 @@ create table aircrafts_data(
 
 
 
-LOADING SNOWFLAKE SCHEMA into DB
+####################  LOADING SNOWFLAKE SCHEMA into DB  ####################### 
+
+----------------------- DATE -------------------
 create table date(
 	date_key serial PRIMARY KEY,
 	day int,
@@ -85,7 +87,7 @@ insert into date(day,month,year,time)
 
 
 
-
+---------------------- AIRPORT ------------------------
 create table airport(
 	airport_key serial PRIMARY KEY,
 	airport varchar(255),
@@ -106,7 +108,7 @@ select * from airports_data
 
 
 
-
+-------------------------- AIRLINE -----------------------
 create table airline(
 	airline_key serial PRIMARY KEY,
 	airline varchar(255),
@@ -120,6 +122,9 @@ insert into airline (airline, iata_code, icao_code, base_country, parent_airline
 select distinct ad.name, ad.iata_code, ad.icao_code, ad.country, f.parent_airline
 from airlines_data ad left join fleet_data f on ad.name = f.airline
 
+
+
+----------------------- AIRCRAFT ---------------------
 create table aircraft(
 	aircraft_key serial PRIMARY KEY,
 	aircraft_type varchar(255),
@@ -129,13 +134,16 @@ create table aircraft(
 )
 
 
-insert into aircraft(aircraft_type, iata_code, icao_code, airline, current, future, historic, average_age, unit_cost_$)
-select distinct ac.name, ac.iata_code, ac.icao_code, a.airline_key, f.current, f.future, f.historic, f.average_age, f.unit_cost_$
-from aircrafts_data ac join fleet_data f on ac.name = f.aircraft_type join airline a on a.airline = f.airline
-order by airline_key
+insert into aircraft(aircraft_type, iata_code, icao_code, unit_cost_$)
+select distinct ac.name, ac.iata_code, ac.icao_code, f.unit_cost_$
+from aircrafts_data ac join fleet_data f on ac.name = f.aircraft_type
+where unit_cost_$ is not null
 
 
 
+
+
+--------------- FLIGHT NUMBER ------------------
 create table flight_number(
 	flight_number varchar(255) NOT NULL,
 	airline int NOT NULL references airline(airline_key),
@@ -149,6 +157,7 @@ from flights_data f join airline a on f.airline_name = a.airline join airport a1
 
 
 
+------------------------ FLIGHT -------------------------
 create table flight(
   departure_date int references date(date_key),
   arrival_date int references date(date_key),
@@ -172,9 +181,53 @@ from date d1 join flights_data f on (d1.day = f.departure_day and d1.month = f.d
       join airport a1 on a1.iata_code = f.from_airport_code
       join airport a2 on a2.iata_code = f.dest_airport_code
       join aircraft ac on ac.aircraft_type = f.aircraft_type
-      join airline al on (al.airline_key = ac.airline and al.airline = f.airline_name)
+      join airline al on al.airline = f.airline_name
 	
 	
+
+
+---------------------- CURRENT ---------------------------
+create table current(
+  airline_key int NOT NULL references airline(airline_key),
+  aircraft_key int NOT NULL references aircraft(aircraft_key),
+  current int
+);
+
+insert into current
+select distinct al.airline_key,ac.aircraft_key,f.current
+from fleet_data f join airline al on f.airline = al.airline join aircraft ac on ac.aircraft_type = f.aircraft_type
+
+
+
+
+---------------------- FUTURE ---------------------------
+create table future(
+  airline_key int NOT NULL references airline(airline_key),
+  aircraft_key int NOT NULL references aircraft(aircraft_key),
+  future int
+);
+
+insert into future
+select distinct al.airline_key,ac.aircraft_key,f.future
+from fleet_data f join airline al on f.airline = al.airline join aircraft ac on ac.aircraft_type = f.aircraft_type
+
+
+
+---------------------- HISTORIC ---------------------------
+create table historic(
+  airline_key int NOT NULL references airline(airline_key),
+  aircraft_key int NOT NULL references aircraft(aircraft_key),
+  historic int
+);
+
+insert into historic
+select distinct al.airline_key,ac.aircraft_key,f.historic
+from fleet_data f join airline al on f.airline = al.airline join aircraft ac on ac.aircraft_type = f.aircraft_type
+
+
+
+
+
 select * from flight_data where departure_day = 2 and departure_month = 5 and dest_airport_code = 'FRA' and from_airport_code = 'BRU'
 
 select * from date where date_key = 2877

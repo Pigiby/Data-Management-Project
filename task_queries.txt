@@ -64,16 +64,16 @@ order by a.airport, d.month
 
 
 #8 ------- FOR EACH AIRLINE RETURN THE TOTAL NUMBER OF CURRENT AIRCRAFTS ---------
-select a.airline, sum(ac.current)
-from airline a join aircraft ac on a.airline_key = ac.airline
+select a.airline, sum(c.current)
+from airline a join current c on c.airline_key = a.airline_key
 group by a.airline
 order by a.airline
 
 
 
 #9 --------- TOP 10 MOST CURRENTLY USED AICRAFT TYPES ----------
-select ac.aircraft_type, sum(ac.current)
-from aircraft ac
+select ac.aircraft_type, sum(c.current)
+from aircraft ac join current c on ac.aircraft_key = c.aircraft_key
 group by ac.aircraft_type
 order by sum(current) DESC
 limit 10
@@ -81,7 +81,59 @@ limit 10
 
 
 #10 ---------- FOR EACH AIRLINE RETURN HOW MANY DIFFERENT AICRAFT TYPES IT OWNS ---------
-select a.airline, count(distinct ac.aircraft_type)
-from airline a join aircraft ac on a.airline_key = ac.airline
-where ac.current != 0
+select a.airline, count(distinct c.aircraft_key)
+from airline a join current c on a.airline_key = c.airline_key
+where c.current != 0
 group by a.airline
+
+
+
+#11 ---------------- ANALYSIS OF INVESTMENTS IN THE LEAST POLLUTING AIRCRAFTS --------------------------
+
+
+
+# -----FOR EACH ROUTE RETURN THE LESS POLLUTING AIRCRAFT-----
+
+create view less_polluting_aircraft as(
+select distinct a1.iata_code as departure, a2.iata_code as arrival, ac.aircraft_type, f.co2_emissions
+from flight f join airport a1 on f.departure_airport = a1.airport_key 
+			  join airport a2 on f.arrival_airport = a2.airport_key
+			  join aircraft ac on f.aircraft = ac.aircraft_key
+where f.co2_emissions <= all (select f2.co2_emissions
+							 from flight f2
+							 where f.departure_airport = f2.departure_airport
+								   and f.arrival_airport = f2.arrival_airport)
+order by a1.iata_code, a2.iata_code)
+
+
+#----- FOR EACH AIRLINE RETURN THE ROUTES IT DOES -----
+
+create view routes_per_airline as(
+select distinct a1.iata_code as departure, a2.iata_code as arrival, al.airline
+from flight f join airport a1 on f.departure_airport = a1.airport_key 
+    join airport a2 on a2.airport_key = f.arrival_airport
+    join airline al on al.airline_key = f.airline
+order by al.airline
+)
+
+
+# ----- FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN -----
+create view airlines_investments as(
+select distinct al.airline, al.base_country, ac.aircraft_type, c.current + f.future as investment
+from routes_per_airline, less_polluting_aircraft, current c, future f, airline al, aircraft ac
+where routes_per_airline.departure = less_polluting_aircraft.departure and
+	  routes_per_airline.arrival = less_polluting_aircraft.arrival and
+	  al.airline = routes_per_airline.airline and 
+	  al.airline_key = c.airline_key and al.airline_key = f.airline_key and 
+	  ac.aircraft_key = c.aircraft_key and ac.aircraft_key = f.aircraft_key and
+	  ac.aircraft_type = less_polluting_aircraft.aircraft_type
+order by investment desc)
+
+
+
+#----- TOP 20 COUNTRIES THAT INVEST IN THE LEAST POLLUTING AIRCRAFTS FOR THE ROUTES THEY DO ----
+select airlines_investments.base_country , sum(investment) as investment_total
+from airlines_investments
+group by airlines_investments.base_country
+order by investment_total desc
+limit 20

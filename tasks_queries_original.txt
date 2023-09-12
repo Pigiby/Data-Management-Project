@@ -115,9 +115,15 @@ where airline_name = airline
 order by airline)
 
 #FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN
-select distinct f.airline,f.aircraft_type,f.current + f.future as investment
-from  routes_per_airline, less_polluting_aircraft ,fleet_data f
-where routes_per_airline.from_airport_code = less_polluting_aircraft.from_airport_code and
-  routes_per_airline.dest_airport_code = less_polluting_aircraft.dest_airport_code 
-  and f.airline = routes_per_airline.airline and f.aircraft_type = less_polluting_aircraft.aircraft_type
-order by investment desc
+create view airlines_investments as(
+select distinct al.airline, al.base_country, ac.aircraft_type, c.current + f.future as investment
+from routes_per_airline, less_polluting_aircraft, current c, future f, airline al, aircraft ac
+where routes_per_airline.departure = less_polluting_aircraft.departure and
+	  routes_per_airline.arrival = less_polluting_aircraft.arrival and
+	  al.airline = routes_per_airline.airline and 
+	  al.airline_key = c.airline_key and al.airline_key = f.airline_key and 
+	  ac.aircraft_key = c.aircraft_key and ac.aircraft_key = f.aircraft_key and
+	  ac.aircraft_type = less_polluting_aircraft.aircraft_type
+order by investment desc)
+
+
