@@ -125,11 +125,6 @@ create table aircraft(
 	aircraft_type varchar(255),
 	iata_code varchar(255),
 	icao_code varchar(255),
-	airline int NOT NULL references airline(airline_key),
-	current int,
-	future int,
-	historic int,
-	avg_age float,
 	unit_cost_$ float
 )
 
