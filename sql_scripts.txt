@@ -145,16 +145,16 @@ where unit_cost_$ is not null
 
 --------------- FLIGHT NUMBER ------------------
 create table flight_number(
-	flight_number varchar(255) NOT NULL,
-	airline int NOT NULL references airline(airline_key),
-	airport_src int NOT NULL references airport(airport_key),
-	airport_dest int NOT NULL references airport(airport_key)
+  flight_number_key serial PRIMARY KEY,
+  flight_number varchar(255) NOT NULL,
+  airline int NOT NULL references airline(airline_key),
+  airport_src int NOT NULL references airport(airport_key),
+  airport_dest int NOT NULL references airport(airport_key)
 )
 
-insert into flight_number(flight_number,airline,airport_1,airport_2)
+insert into flight_number(flight_number,airline,airport_src,airport_dest)
 select distinct f.flight_number, a.airline_key,a1.airport_key,a2.airport_key
 from flights_data f join airline a on f.airline_name = a.airline join airport a1 on f.from_airport_code = a1.iata_code join airport a2 on a2.iata_code = f.dest_airport_code
-
 
 
 ------------------------ FLIGHT -------------------------
@@ -165,23 +165,24 @@ create table flight(
   arrival_airport int references airport(airport_key),
   aircraft int references aircraft(aircraft_key),
   airline int references airline(airline_key),
+  flight_number int references flight_number(flight_number_key),
   duration int,
   price float,
   co2_emissions int,
   avg_co2_emissions_for_this_route int,
   co2_percentage int,
-  PRIMARY KEY (departure_date, arrival_date,departure_airport,arrival_airport,airline,aircraft)
+  PRIMARY KEY (departure_date, arrival_date,departure_airport,arrival_airport,airline,aircraft,flight_number)
 )
 
-
 insert into flight
-select distinct d1.date_key,d2.date_key,a1.airport_key,a2.airport_key,ac.aircraft_key, al.airline_key,f.duration,f.price,f.co2_emissions,f.avg_co2_emissions_for_this_route,f.co2_percentage 
+select distinct d1.date_key,d2.date_key,a1.airport_key,a2.airport_key,ac.aircraft_key, al.airline_key,fn.flight_number_key,f.duration,f.price,f.co2_emissions,f.avg_co2_emissions_for_this_route,f.co2_percentage 
 from date d1 join flights_data f on (d1.day = f.departure_day and d1.month = f.departure_month and d1.year = f.departure_year and d1.time = f.departure_time) 
       join date d2 on (d2.day = f.arrival_day and d2.month = f.arrival_month and d2.year = f.arrival_year and d2.time = f.arrival_time)
       join airport a1 on a1.iata_code = f.from_airport_code
       join airport a2 on a2.iata_code = f.dest_airport_code
       join aircraft ac on ac.aircraft_type = f.aircraft_type
       join airline al on al.airline = f.airline_name
+      join flight_number fn on f.flight_number = fn.flight_number
 	
 	
 
