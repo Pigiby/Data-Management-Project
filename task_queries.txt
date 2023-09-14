@@ -10,9 +10,9 @@ order by a1.airport,a2.airport
 
 #2 ------------ FOR EACH AIRLINE COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE ------------
 
-select distinct al.airline, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
-from flight f join airline al on f.airline = al.airline_key
-group by al.airline
+select distinct ac.aircraft_type, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
+from flight f join aircraft ac on f.aircraft = ac.aircraft_key
+group by ac.aircraft_type
 
 
 #3 ---------- FOR EACH AIRLINE RETURN ALL THE ROUTES ---------------
@@ -137,3 +137,13 @@ from airlines_investments
 group by airlines_investments.base_country
 order by investment_total desc
 limit 20
+
+
+
+
+# 12 --------- FOR EACH AIRCRAFT_TYPE RETURN THE NUMBER OF AIRCRAFTS CURRENTLY OPERATING -----------
+select ac.aircraft_type, sum(c.current) as total
+from aircraft ac join current c on ac.aircraft_key = c.aircraft_key
+group by ac.aircraft_type
+order by total desc
+
