@@ -8,7 +8,7 @@ where f.co2_emissions <= all (select f2.co2_emissions
 order by a1.airport,a2.airport
 
 
-#2 ------------ FOR EACH AIRLINE COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE ------------
+#2 ------------ FOR EACH AIRCRAFT COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE ------------
 
 select distinct ac.aircraft_type, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
 from flight f join aircraft ac on f.aircraft = ac.aircraft_key
