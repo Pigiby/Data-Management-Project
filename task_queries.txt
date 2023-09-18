@@ -10,7 +10,8 @@ order by a1.airport,a2.airport
 
 #2 ------------ FOR EACH AIRCRAFT COMPUTE THE AVERAGE CO2 EMISSION PER MINUTE ------------
 
-select distinct ac.aircraft_type, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
+
+select ac.aircraft_type, sum(f.co2_emissions)/sum(f.duration) as average_co2_emissions_per_minute
 from flight f join aircraft ac on f.aircraft = ac.aircraft_key
 group by ac.aircraft_type
 
@@ -55,10 +56,10 @@ where f.co2_percentage >= ALL (select co2_percentage
 
 
 # 7 ------ FOR EACH AIRPORT COUNT THE INCOMING/OUTGOING FLIGHTS --------
-select a.airport, d.month, count(*)
+select a.airport, a.city,a.country,d.month, count(*)
 from flight f join date d on f.departure_date = d.date_key, airport a
 where a.airport_key = f.departure_airport or a.airport_key = f.arrival_airport
-group by a.airport, d.month
+group by a.airport, a.city,a.country,d.month
 order by a.airport, d.month
 
 
@@ -71,7 +72,7 @@ order by a.airline
 
 
 
-#9 --------- TOP 10 MOST CURRENTLY USED AICRAFT TYPES ----------
+#9 --------- TOP 10 MOST CURRENTLY USED AIRCRAFT TYPES ----------
 select ac.aircraft_type, sum(c.current)
 from aircraft ac join current c on ac.aircraft_key = c.aircraft_key
 group by ac.aircraft_type
@@ -117,22 +118,22 @@ order by al.airline
 )
 
 
-# ----- FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN -----
+# ----- FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN AND HOW MUCH THE AIRLINE HAS INVEST ON THESE AIRCRAFTS-----
 create view airlines_investments as(
-select distinct al.airline, al.base_country, ac.aircraft_type, c.current + f.future as investment
+select distinct al.airline, al.base_country, ac.aircraft_type,(c.current+f.future) as quantity, (c.current+f.future)*ac.unit_cost_$ as investment
 from routes_per_airline, less_polluting_aircraft, current c, future f, airline al, aircraft ac
 where routes_per_airline.departure = less_polluting_aircraft.departure and
 	  routes_per_airline.arrival = less_polluting_aircraft.arrival and
 	  al.airline = routes_per_airline.airline and 
 	  al.airline_key = c.airline_key and al.airline_key = f.airline_key and 
 	  ac.aircraft_key = c.aircraft_key and ac.aircraft_key = f.aircraft_key and
-	  ac.aircraft_type = less_polluting_aircraft.aircraft_type
-order by investment desc)
+	  ac.aircraft_type = less_polluting_aircraft.aircraft_type and (c.current != 0 or f.future != 0)
+order by quantity,investment desc);
 
 
 
 #----- TOP 20 COUNTRIES THAT INVEST IN THE LEAST POLLUTING AIRCRAFTS FOR THE ROUTES THEY DO ----
-select airlines_investments.base_country , sum(investment) as investment_total
+select airlines_investments.base_country ,sum(quantity) as total_aircrafts, sum(investment) as investment_total
 from airlines_investments
 group by airlines_investments.base_country
 order by investment_total desc
@@ -147,3 +148,24 @@ from aircraft ac join current c on ac.aircraft_key = c.aircraft_key
 group by ac.aircraft_type
 order by total desc
 
+
+
+
+
+
+#13 ------ FOR EACH ROUTE RETURN THE AVERAGE PRICE -------
+
+
+select a1.airport,a1.city,a2.airport,a2.city,d.month,avg(f.price)
+from flight f join airport a1 on f.departure_airport = a1.airport_key join airport a2 on f.arrival_airport = a2.airport_key join date d on f.departure_date = d.date_key
+group by a1.airport,a1.city,a2.airport,a2.city,d.month
+order by a1.airport,a1.city,a2.airport,a2.city,d.month
+
+
+
+#14 ----for each day return the total amount of emitted co2 by all the flights -----
+
+select d.day, d.month, d.year, sum(f.co2_emissions)
+from flight f join date d on f.departure_date = d.date_key
+group by d.day, d.month, d.year
+order by d.day, d.month, d.year
