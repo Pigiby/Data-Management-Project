@@ -118,22 +118,22 @@ order by al.airline
 )
 
 
-# ----- FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN -----
+# ----- FOR EACH ROUTE DONE BY AN AIRLINE SEE HOW MANY OF THE LEAST POLLUTING AIRCRAFT OF THIS ROUTE THE AIRLINE OWNS CURRENTLY OR WILL OWN AND HOW MUCH THE AIRLINE HAS INVEST ON THESE AIRCRAFTS-----
 create view airlines_investments as(
-select distinct al.airline, al.base_country, ac.aircraft_type, c.current + f.future as investment
+select distinct al.airline, al.base_country, ac.aircraft_type,(c.current+f.future) as quantity, (c.current+f.future)*ac.unit_cost_$ as investment
 from routes_per_airline, less_polluting_aircraft, current c, future f, airline al, aircraft ac
 where routes_per_airline.departure = less_polluting_aircraft.departure and
 	  routes_per_airline.arrival = less_polluting_aircraft.arrival and
 	  al.airline = routes_per_airline.airline and 
 	  al.airline_key = c.airline_key and al.airline_key = f.airline_key and 
 	  ac.aircraft_key = c.aircraft_key and ac.aircraft_key = f.aircraft_key and
-	  ac.aircraft_type = less_polluting_aircraft.aircraft_type
-order by investment desc)
+	  ac.aircraft_type = less_polluting_aircraft.aircraft_type and (c.current != 0 or f.future != 0)
+order by quantity,investment desc);
 
 
 
 #----- TOP 20 COUNTRIES THAT INVEST IN THE LEAST POLLUTING AIRCRAFTS FOR THE ROUTES THEY DO ----
-select airlines_investments.base_country , sum(investment) as investment_total
+select airlines_investments.base_country ,sum(quantity) as total_aircrafts, sum(investment) as investment_total
 from airlines_investments
 group by airlines_investments.base_country
 order by investment_total desc
