@@ -1,2 +1,29 @@
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Full Kaggle flights dump: too large for git (see README to download it)
+data/raw/flight_data.csv
 flight_data.csv
+
+# Tableau autosave / recovery files
+~*.twbr
+*.twbr
+tableau_sheets/
+
+# Files from the old layout that are no longer used
+aircraft_cleansing/
+airlines_cleansing/
+airport_cleansing/
+fleet_data_cleansing/
+flight_data_cleansing/
+
+# Course material not needed to reproduce the project
+docs/Data_management_proposal.pdf
